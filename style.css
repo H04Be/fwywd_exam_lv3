@@ -12,7 +12,7 @@ nav {
   justify-content: space-around; /* 表示領域に合わせて要素間にスペースを空ける  */
   align-items: center; /* 縦方向の位置を指定　中央揃え */
   min-height: 8vh; /* 高さの最小値　ビューポートの高さに対する割合 */
-  background-color: #e3f0f0; /* 背景色を指定 */
+  /*background-color: #e3f0f0;*/ /* 背景色を指定 */
 }
 
 /******************************************************************/
@@ -31,7 +31,7 @@ nav {
 .nav-links {
   display: flex;
   /*justify-content: space-around;*/ /* 要素数が変更された場合に適切に配置される */
-  width: 30%; /* メニューの幅を指定 */
+  width: 40%; /* メニューの幅を指定 */
   transition: all 0.5s ease-in-out;
 }
 
@@ -49,6 +49,24 @@ nav {
 
 .nav-links li + li {
   border-left: 1px solid #384459; /*　メニューの区切り線 */
+}
+
+/******************************************************************/
+/* 「無料説明会へ申し込み」ボタン                                                    */
+/******************************************************************/
+.btn {
+  background-color: #007979;
+  padding: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+/* ボタンの三角アイコン　*/
+.btn img {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  vertical-align: 0px;
 }
 
 /******************************************************************/
@@ -105,6 +123,10 @@ nav {
   /* バーガーアイコン表示 */
   .burger {
     display: block;
+  }
+
+  .btn {
+    padding: 15px;
   }
 }
 
