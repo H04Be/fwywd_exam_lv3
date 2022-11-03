@@ -1,240 +1,133 @@
-header {
-  z-index: 10;
-  height: 64px;
-  position: absolute;
-  top: 0px;
-  background-color: #e3f0f0;
-  width: 1280px;
-  text-align: right;
-  /*z-index: 2;*/
-  /*box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);*/
-}
-
-ul {
-  overflow: hidden;
-  list-style: none;
-  margin: 0 auto;
-  z-index: 20;
-}
-
-ul li {
-  display: inline-block;
-  padding: 20px 10px 20px 10px;
-}
-
-.btn4 {
-  text-transform: uppercase;
-  text-align: center;
-  position: relative;
-  text-decoration: none;
-  display: inline-block;
-}
-.btn4::before {
-  content: "";
-  position: absolute;
-  bottom: -2px;
-  left: 0px;
-  width: 100%;
-  height: 2px;
-  /* background: #3367ff;*/
-  background: #06bbbc;
-  display: block;
-  -webkit-transform-origin: right top;
-  -ms-transform-origin: right top;
-  transform-origin: right top;
-  -webkit-transform: scale(0, 1);
-  -ms-transform: scale(0, 1);
-  transform: scale(0, 1);
-  -webkit-transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
-  transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
-}
-.btn4:hover::before {
-  -webkit-transform-origin: left top;
-  -ms-transform-origin: left top;
-  transform-origin: left top;
-  -webkit-transform: scale(1, 1);
-  -ms-transform: scale(1, 1);
-  transform: scale(1, 1);
-}
-
-.btn2 {
-  text-transform: uppercase;
-  text-align: center;
-  position: relative;
-  text-decoration: none;
-  display: inline-block;
-  /*border-bottom: 2px solid #3367ff;*/
-}
-
-body {
-  background-color: lightyellow;
-}
-
-/*
-h1,
-h2 {
+* {
   margin: 0;
-  padding: 1em 0;
-  text-align: center;
-  color: #ddd;
+  padding: 0;
+  box-sizing: border-box; /* レスポンシブでflexにした時にパーセンテージがあてやすくする */
 }
 
-header {
-  z-index: 10;
-  height: 64px;
-  position: absolute;
-  top: 300px;
-  background-color: #333;
-  width: 100%;
-  text-align: center;
-  z-index: 2;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+/******************************************************************/
+/* navタブ全体の設定                                               */
+/******************************************************************/
+nav {
+  display: flex; /* 要素を横並びにする */
+  justify-content: space-around; /* 表示領域に合わせて要素間にスペースを空ける  */
+  align-items: center; /* 縦方向の位置を指定　中央揃え */
+  min-height: 8vh; /* 高さの最小値　ビューポートの高さに対する割合 */
+  background-color: #e3f0f0; /* 背景色を指定 */
 }
 
-a {
-  color: #fff;
-  text-transform: uppercase;
+/******************************************************************/
+/* ロゴ                                                           */
+/******************************************************************/
+.fwywd_logo img {
+  width: 100px;
+  height: 30px;
+  top: 10px;
+  left: 300px;
 }
 
-ul {
-  overflow: hidden;
-  list-style: none;
-  margin: 0 auto;
-  z-index: 20;
+/******************************************************************/
+/* メニュー関連の設定                                               */
+/******************************************************************/
+.nav-links {
+  display: flex;
+  /*justify-content: space-around;*/ /* 要素数が変更された場合に適切に配置される */
+  width: 30%; /* メニューの幅を指定 */
+  transition: all 0.5s ease-in-out;
 }
 
-ul li {
-  display: inline-block;
-  padding: 26px 10px 20px 10px;
+.nav-links li {
+  list-style: none; /* ●を消す */
+  flex-grow: 1; /* 同じ大きさに伸ばす */
+  text-align: center; /* 表示位置を真ん中に */
 }
 
-ul li:hover {
-  -webkit-transform-origin: left top;
-  -ms-transform-origin: left top;
-  transform-origin: left top;
-  -webkit-transform: scale(1, 1);
-  -ms-transform: scale(1, 1);
-  transform: scale(1, 1);
-}
-.spaser {
-  height: 100px;
-}
-.top-image-area {
-  width: 100%;
-  height: 300px;
-  background-image: url("../img/topimage.jpg");
-  background-position: 50% 20%;
-  background-size: cover;
-}
-.logo-container {
-  width: 70px;
-  height: 70px;
-  margin-left: 10px;
-}
-.logo-container img {
-  height: 100%;
-  width: 100%;
+.nav-links a {
+  text-decoration: none; /* アンダーバーを消す */
+  color: #384459; /* テキストの色を指定 */
+  font-weight: normal; /* フォントのタイプを指定 */
 }
 
-.slanting {
-  position: relative;
-  height: 200px;
-  background: #ddd;
+.nav-links li + li {
+  border-left: 1px solid #384459; /*　メニューの区切り線 */
 }
-svg {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 200px;
-  fill: #5f5f5f;
+
+/******************************************************************/
+/* バーガー関連                                                    */
+/******************************************************************/
+.burger {
+  display: none; /* 非表示 */
+  cursor: pointer; /* カーソルポイント */
 }
-.contents {
+
+/* 三本線の作成 */
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #384459;
+  margin: 5px;
+  transition: all 0.5s ease-in-out;
 }
-.footer {
-  height: 200px;
-  background: black;
-  color: #fff;
-  clear: both;
-}
-.main-contents,
-.left-navi,
-.right-navi {
-  height: 100%;
-}
-.main-contents {
-  float: left;
-  width: 80%;
-}
-.left-navi {
-  background-color: blue;
-  color: #fff;
-  width: 20%;
-  float: right;
-  height: 400px;
-  margin-top: 64px;
-}
-.right-navi {
-  background-color: blueviolet;
-  color: #fff;
-  float: right;
-  width: 20%;
-  height: 400px;
-}
-.main {
-  width: 80%;
-  float: right;
-  margin-top: 64px;
-}
-@media screen and (max-width: 600px) {
-  .main,
-  .left-navi,
-  .main-contents,
-  .right-navi {
-    width: 100%;
+
+/******************************************************************/
+/* レスポンシブ対応                                                    */
+/******************************************************************/
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    width: 55%;
   }
 }
 
-.btn4 {
-  text-transform: uppercase;
-  text-align: center;
-  position: relative;
-  text-decoration: none;
-  display: inline-block;
+.nav-active {
+  /* メニュー枠を表示される　!important：優先される */
+  transform: translateX(0%) !important;
 }
 
-.btn4::before {
-  content: "";
-  position: absolute;
-  bottom: -2px;
-  left: 0px;
-  width: 100%;
-  height: 2px;
-  background: #3367ff;
-  display: block;
-  -webkit-transform-origin: right top;
-  -ms-transform-origin: right top;
-  transform-origin: right top;
-  -webkit-transform: scale(0, 1);
-  -ms-transform: scale(0, 1);
-  transform: scale(0, 1);
-  -webkit-transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
-  transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
-}
-.btn4:hover::before {
-  -webkit-transform-origin: left top;
-  -ms-transform-origin: left top;
-  transform-origin: left top;
-  -webkit-transform: scale(1, 1);
-  -ms-transform: scale(1, 1);
-  transform: scale(1, 1);
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden; /* 右スクロールした時にメニューを見えなくする */
+  }
+  .nav-links {
+    position: absolute;
+    right: 0;
+    height: 92vh;
+    top: 8vh;
+    background-color: #e3f0f0;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    transform: translateX(100%); /* メニュー枠を見えなくする */
+  }
+
+  .nav-links li {
+    opacity: 0; /* メニュータイトル非表示 */
+  }
+
+  /* バーガーアイコン表示 */
+  .burger {
+    display: block;
+  }
 }
 
-.btn2 {
-  text-transform: uppercase;
-  text-align: center;
-  position: relative;
-  text-decoration: none;
-  display: inline-block;
-  border-bottom: 2px solid #3367ff;
+/******************************************************************/
+/* メニュー表示                                                    */
+/******************************************************************/
+@keyframes navLinksFase {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
-*/
+
+.toggle.line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle.line2 {
+  opacity: 0;
+}
+.toggle.line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
