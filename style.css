@@ -4,23 +4,48 @@
   box-sizing: border-box; /* レスポンシブでflexにした時にパーセンテージがあてやすくする */
 }
 
+header {
+  display: flex;
+  min-height: 6vh;
+  justify-content: space-around;
+  margin-top: 10px;
+  /* background-color: #e3f0f0;*/
+}
+
 /******************************************************************/
 /* navタブ全体の設定                                               */
 /******************************************************************/
 nav {
   display: flex; /* 要素を横並びにする */
-  justify-content: space-around; /* 表示領域に合わせて要素間にスペースを空ける  */
+  justify-content: flex-end;
+  /*  justify-content: space-around; */ /* 表示領域に合わせて要素間にスペースを空ける  */
   align-items: center; /* 縦方向の位置を指定　中央揃え */
-  min-height: 8vh; /* 高さの最小値　ビューポートの高さに対する割合 */
+  min-height: 6vh; /* 高さの最小値　ビューポートの高さに対する割合 */
   /*background-color: #e3f0f0;*/ /* 背景色を指定 */
+  /*border: 1px solid #000;*/
 }
 
 /******************************************************************/
 /* ロゴ                                                           */
 /******************************************************************/
 .fwywd_logo img {
-  width: 100px;
-  height: 30px;
+  /* width: 50px;
+  height: 10px;
+  padding-top: 10px;
+  padding-block: 100px;*/
+  top: 10px;
+  left: 300px;
+}
+
+/******************************************************************/
+/* ロゴ(SP)                                                       */
+/******************************************************************/
+.fwywd_logo_SP img {
+  display: none;
+  /* width: 50px;
+    height: 10px;
+    padding-top: 10px;
+    padding-block: 100px;*/
   top: 10px;
   left: 300px;
 }
@@ -31,14 +56,18 @@ nav {
 .nav-links {
   display: flex;
   /*justify-content: space-around;*/ /* 要素数が変更された場合に適切に配置される */
-  width: 40%; /* メニューの幅を指定 */
+  width: 100%; /* メニューの幅を指定 */
   transition: all 0.5s ease-in-out;
+  padding-left: 100px;
+  padding-right: 50px;
 }
 
 .nav-links li {
   list-style: none; /* ●を消す */
   flex-grow: 1; /* 同じ大きさに伸ばす */
   text-align: center; /* 表示位置を真ん中に */
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .nav-links a {
@@ -48,7 +77,7 @@ nav {
 }
 
 .nav-links li + li {
-  border-left: 1px solid #384459; /*　メニューの区切り線 */
+  border-left: 1px solid #ececec; /*　メニューの区切り線 */
 }
 
 /******************************************************************/
@@ -59,6 +88,7 @@ nav {
   padding: 20px;
   text-decoration: none;
   color: white;
+  width: 300px;
 }
 
 /* ボタンの三角アイコン　*/
@@ -91,7 +121,10 @@ nav {
 /******************************************************************/
 @media screen and (max-width: 1024px) {
   .nav-links {
-    width: 55%;
+    width: 90%;
+  }
+  .fwywd_logo {
+    display: none;
   }
 }
 
@@ -127,6 +160,7 @@ nav {
 
   .btn {
     padding: 15px;
+    width: 230px;
   }
 }
 
