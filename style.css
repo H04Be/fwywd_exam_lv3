@@ -1,3 +1,48 @@
 body {
   font-family: "Noto Sans JP";
+  font-size: 16px;
+  color: #384459;
+}
+
+.header__container {
+  display: flex; /* 要素を横向きに表示　*/
+  justify-content: space-between; /* 要素を等間隔に配置 */
+  padding: 0px 30px; /* 縦方向 0px 横方向 30px */
+  align-items: center; /* 縦方向に要素を中央揃え */
+}
+
+.header__items {
+  list-style: none; /* ●を消す */
+  display: flex; /* 要素を横向きに表示 */
+  gap: 0px 30px; /* 要素間に空白を設定　縦方向 0px 横方向 30px */
+  font-weight: 600; /* 太字　*/
+}
+
+.header__items-li {
+  padding: 0px 20px;
+  border-right: solid 1px #e4e4e4;
+}
+
+.header__items-a {
+  text-decoration: none;
+  color: #384459;
+}
+
+.header__items-li:last-child {
+  border-right: none;
+}
+
+.header__button {
+  text-decoration: none;
+  background: #007979;
+  color: white;
+  font-weight: 600;
+  padding: 30px 40px;
+  display: flex;
+  gap: 0px 10px;
+}
+
+.header__button:hover {
+  opacity: 0.7;
+  transition: 1s;
 }
