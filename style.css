@@ -1,48 +1,112 @@
+/******************************************/
+/* ベース　　                              */
+/******************************************/
 body {
   font-family: "Noto Sans JP";
   font-size: 16px;
   color: #384459;
 }
 
-.header__container {
-  display: flex; /* 要素を横向きに表示　*/
-  justify-content: space-between; /* 要素を等間隔に配置 */
-  padding: 0px 30px; /* 縦方向 0px 横方向 30px */
-  align-items: center; /* 縦方向に要素を中央揃え */
+/******************************************/
+/* レイアウト                              */
+/******************************************/
+.flex {
+  /* 要素を横向きに表示　*/
+  display: flex;
 }
 
-.header__items {
-  list-style: none; /* ●を消す */
-  display: flex; /* 要素を横向きに表示 */
-  gap: 0px 30px; /* 要素間に空白を設定　縦方向 0px 横方向 30px */
-  font-weight: 600; /* 太字　*/
+.justify-between {
+  /* 要素を等間隔に配置 */
+  justify-content: space-between;
 }
 
-.header__items-li {
-  padding: 0px 20px;
+.align-center {
+  /* 縦方向に要素を中央揃え */
+  align-items: center;
+}
+
+/******************************************/
+/* ボーダー　                              */
+/******************************************/
+.border-right {
+  /* メニューの境界線 */
   border-right: solid 1px #e4e4e4;
 }
 
-.header__items-a {
-  text-decoration: none;
+/******************************************/
+/* 文字装飾　                              */
+/******************************************/
+.text-black {
+  /* 文字色 黒 */
   color: #384459;
 }
 
-.header__items-li:last-child {
-  border-right: none;
+.text-white {
+  /* 文字色 白 */
+  color: white;
 }
 
-.header__button {
-  text-decoration: none;
-  background: #007979;
-  color: white;
+.list-style-none {
+  /* ●を消す */
+  list-style: none;
+}
+
+.font-bold {
+  /* 太字　*/
   font-weight: 600;
-  padding: 30px 40px;
-  display: flex;
+}
+
+.decoration-none {
+  /* アンダーラインの削除 */
+  text-decoration: none;
+}
+
+.bg-primary {
+  /* 背景色 */
+  background: #007979;
+}
+
+/******************************************/
+/* 空白　　　                              */
+/******************************************/
+.gap-x-30 {
+  /* 要素間に空白を設定　縦方向 0px 横方向 30px */
+  gap: 0px 30px;
+}
+
+.gap-x-10 {
+  /* 要素間に空白を設定　縦方向 0px 横方向 10px */
   gap: 0px 10px;
 }
 
-.header__button:hover {
+.px-20 {
+  /*  要素の左右に空白を設定 20px */
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.px-30 {
+  /*  要素の左右に空白を設定 30px */
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.px-40 {
+  /* 要素の左右に空白を設定 40px */
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.py-30 {
+  /* 要素の上下に空白を設定 30px */
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/******************************************/
+/* ボタンアクション                        */
+/******************************************/
+.btn-hover:hover {
   opacity: 0.7;
   transition: 1s;
 }
