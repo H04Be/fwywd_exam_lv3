@@ -188,9 +188,9 @@ body {
 }
 
 /******************************************/
-/* sm: witdh <= 640                       */
+/* sm: witdh <= 767                       */
 /******************************************/
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 767px) {
   .sm_hidden {
     display: none;
   }
