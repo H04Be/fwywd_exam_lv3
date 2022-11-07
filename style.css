@@ -27,6 +27,10 @@ body {
   display: flex;
 }
 
+.block {
+  display: block;
+}
+
 .justify-between {
   /* 要素を等間隔に配置 */
   justify-content: space-between;
@@ -58,6 +62,11 @@ body {
   color: white;
 }
 
+.text-primary {
+  /* 文字色 メイン */
+  color: #007979;
+}
+
 .list-style-none {
   /* ●を消す */
   list-style: none;
@@ -76,6 +85,10 @@ body {
 .bg-primary {
   /* ボタン背景色 */
   background: #007979;
+}
+
+.text-center {
+  text-align: center;
 }
 
 /******************************************/
@@ -125,6 +138,14 @@ body {
   margin-left: 20px;
 }
 
+.mh-auto {
+  margin: 0 auto; /* 水平方向のマージン */
+}
+
+.mh-15 {
+  margin: 0 15px; /* 水平方向のマージン */
+}
+
 /******************************************/
 /* 空白（ギャップ）　                       */
 /******************************************/
@@ -146,11 +167,75 @@ body {
 }
 
 /******************************************/
+/* 表示位置　　　　                        */
+/******************************************/
+.pos-relative {
+  position: relative;
+}
+
+.pos-bottom {
+  position: relative;
+  z-index: 1;
+}
+
+.pos-top {
+  position: relative;
+  z-index: 2;
+}
+
+.vertical-align-middle {
+  vertical-align: middle;
+}
+
+/******************************************/
+/* sm: witdh <= 640                       */
+/******************************************/
+@media screen and (max-width: 640px) {
+  .sm_hidden {
+    display: none;
+  }
+}
+
+/******************************************/
 /* md: 768 <= witdh                       */
 /******************************************/
 @media screen and (min-width: 768px) {
+  body {
+    font-size: 10px;
+  }
   .md_text-14 {
     font-size: 14px;
+  }
+
+  .md_w-50 {
+    /* Hero ロゴの幅 50px */
+    width: 50px;
+  }
+
+  .md_x-w-10 {
+    /* xアイコンの幅 10px */
+    width: 10px;
+  }
+
+  .md_px-20 {
+    /*  要素の左右に空白を設定 20px */
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .md_hero-txt-pos {
+    position: absolute; /* 要素の配置方法を指定 */
+    /*background-color: #ccc;*/ /* 背景色指定 */
+    padding: 20px; /* 余白指定 */
+    top: 50%;
+    left: 25%;
+    transform: translate(-45%, -50%);
+    max-width: 50%;
+  }
+
+  .md_hero-title-line {
+    top: -10px; /* HeroのTitleからの位置指定 */
+    /*width: 460px;*/
   }
 }
 
@@ -169,10 +254,10 @@ body {
     font-size: 11px;
   }
 
-  .lg_px-20 {
-    /*  要素の左右に空白を設定 30px */
-    padding-left: 20px;
-    padding-right: 20px;
+  .lg_px-60 {
+    /*  要素の左右に空白を設定 60px */
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
   .lg_w-150 {
@@ -180,13 +265,44 @@ body {
     width: 150px;
   }
 
+  .lg_w-100 {
+    /* Hero ロゴの幅 100px */
+    width: 100px;
+  }
+
+  .lg_w-550 {
+    /* Hero テキストの幅 550px */
+    width: 550px;
+  }
+
+  .lg_w-280 {
+    /* Hero ボタンの幅 280px */
+    width: 280px;
+  }
+
   .lg_ml-10 {
+    /* ロゴのマージン左 */
     margin-left: 10px;
   }
 
   .lg_gap-x-15 {
     /* 要素間に空白を設定　縦方向 0px 横方向 30px */
     gap: 0px 15px;
+  }
+
+  .lg_hero-txt-pos {
+    position: absolute; /* 要素の配置方法を指定 */
+    /*background-color: #ccc;*/ /* 背景色指定 */
+    padding: 20px; /* 余白指定 */
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    max-width: 50%;
+    margin-left: 2%;
+  }
+
+  .lg_hero-title-line {
+    top: -10px; /* HeroのTitleからの位置指定 */
   }
 }
 
@@ -201,4 +317,52 @@ body {
   .xl_m-auto {
     margin: 0px auto;
   }
+
+  .xl_mh-80 {
+    margin: 0 80px; /* 水平方向のマージン */
+  }
+
+  .lx_ml-10 {
+    /* ロゴのマージン左 */
+    margin-left: 10px;
+  }
+
+  .lx_hero-txt-pos {
+    position: absolute; /* 要素の配置方法を指定 */
+    /*background-color: #ccc;*/ /* 背景色指定 */
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    padding: 20px; /* 余白指定 */
+  }
+
+  .lx_hero-title-line {
+    top: -10px; /* HeroのTitleからの位置指定 */
+  }
+}
+
+/******************************************/
+/* ボタン　　　　　　                       */
+/******************************************/
+.btn {
+  display: flex;
+  font-size: 14px;
+  text-decoration: none; /* アンダーラインの削除 */
+  color: white; /* 文字色 白 */
+  font-weight: 700; /* 太字　*/
+  width: 220px; /* Hero ボタンの幅 220px */
+  gap: 0px 10px; /* 要素間に空白を設定　縦方向 0px 横方向 10px */
+
+  /* 要素の上下に空白を設定 15px */
+  padding-top: 15px;
+  padding-bottom: 15px;
+  /* 要素の左右に空白を設定 20px */
+  padding-left: 20px;
+  padding-right: 20px;
+  /* 角を丸く */
+  border-radius: 4px;
+  /* 背景色グラデーション */
+  background: linear-gradient(to right, #2ea1aa, #06bc7a);
+  box-shadow: 0px 4px 20px #ffffff, -4px -4px 20px #ffffff;
+  margin: 0 auto;
 }

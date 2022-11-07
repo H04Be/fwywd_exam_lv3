@@ -10,11 +10,22 @@
     <link rel="stylesheet" href="./reset.css" />
     <!-- faviconを設定-->
     <link rel="icon" sizes="192x192" href="./img/fwywd_icon.png" />
+    <!-- OGPを設定-->
+    <meta
+      property="og:description"
+      content="HTMLとCSSで実装し、GitHub Pagesで公開"
+    />
+    <meta property="og:title" content="fwywd 課題 Lv.03" />
+    <meta property="og:image" content="./img/ogp_img.jpg" />
+    <meta property="og:image:width" content="600" />
+    <meta property="og:image:height" content="315" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://h04be.github.io/fwywd_exam_lv3/" />
   </head>
   <body>
-    <header>
+    <header class="xl_max-w-1280">
       <nav
-        class="flex justify-between px-0 align-center ml-20 lg_px-30 lg_ml-0 xl_max-w-1280 xl_m-auto"
+        class="flex justify-between px-0 align-center ml-20 lg_px-30 lg_ml-10 xl_ml-10 xl_max-w-1280"
       >
         <div>
           <a href="#"
@@ -77,5 +88,64 @@
         </div>
       </nav>
     </header>
+    <section class="sm_hidden pos-relative xl_max-w-1280">
+      <div class="flex">
+        <div>
+          <img src="./img/hero01_bg01.jpg" alt="hero-bg" />
+          <div class="lg_hero-txt-pos xl_hero-txt-pos md_hero-txt-pos">
+            <img
+              class="lg_w-100 md_w-50 mh-auto"
+              src="./img/hero01_logo.png"
+              alt="hero-logo"
+            />
+            <br /><br />
+            <img
+              src="./img/hero01_txt_title_img_black.png"
+              alt="hero-title"
+              class="pos-top"
+            />
+            <img
+              src="./img/hero01_line.png"
+              alt="hero-title-line"
+              class="pos-bottom lg_hero-title-line xl_hero-title-line md_hero-title-line"
+            />
+            <div
+              class="flex gap-x-10 align-center justify-between mh-15 xl_mh-80 lg_px-60 md_px-20"
+            >
+              <div class="text-primary font-bold lg_text-11">
+                仕事を続けながら挑戦可能
+              </div>
+              <div>
+                <img
+                  class="md_x-w-10"
+                  src="./img/hero01_x_icon.svg"
+                  alt="x-icon"
+                />
+              </div>
+              <div class="text-primary font-bold lg_text-11">
+                新規事業のすべてが学べる
+              </div>
+            </div>
+            <br /><br />
+            <div class="text-primary text-11">
+              <p style="text-align: center">
+                <span style="font-family: arial">&#92;</span>
+                現在１期で２８人が起業に挑戦中 /
+              </p>
+            </div>
+            <a
+              href="https://forms.gle/qzQrXyeSAnNXcpFV9"
+              target="_blank"
+              class="btn btn-hover"
+              ><img
+                src="./img/Polygon.png"
+                alt="arrow"
+              />無料説明会へ申し込み</a
+            >
+          </div>
+        </div>
+        <div><img src="./img/hero01_bg02.jpg" alt="hero-bg" /></div>
+      </div>
+    </section>
   </body>
 </html>
