@@ -20,6 +20,16 @@ body {
   font-size: 10px;
 }
 
+.text-12 {
+  /* 文字サイズ */
+  font-size: 12px;
+}
+
+.text-14 {
+  /* 文字サイズ */
+  font-size: 14px;
+}
+
 .text-16 {
   /* 文字サイズ */
   font-size: 16px;
@@ -434,12 +444,12 @@ body {
     margin: 0 80px; /* 水平方向のマージン */
   }
 
-  .lx_ml-10 {
+  .xl_ml-10 {
     /* ロゴのマージン左 */
     margin-left: 10px;
   }
 
-  .lx_hero-txt-pos {
+  .xl_hero-txt-pos {
     position: absolute; /* 要素の配置方法を指定 */
     /*background-color: #ccc;*/ /* 背景色指定 */
     top: 50%;
@@ -448,7 +458,7 @@ body {
     padding: 20px; /* 余白指定 */
   }
 
-  .lx_hero-title-line {
+  .xl_hero-title-line {
     top: -10px; /* HeroのTitleからの位置指定 */
   }
 
@@ -468,7 +478,7 @@ body {
 
   .xl_sympathy-ruby-margin {
     /* マージン　ルビの位置調整 10%　*/
-    margin-left: 10%;
+    margin-left: 8%;
   }
 
   .xl_sympathy-img01 {
