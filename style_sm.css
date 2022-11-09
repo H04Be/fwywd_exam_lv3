@@ -1,0 +1,355 @@
+/******************************************/
+/* モバイルを基準                          */
+/******************************************/
+body {
+  font-family: "Noto Sans JP";
+  font-size: 12px;
+  color: #384459;
+  min-width: 380px;
+}
+
+/******************************************/
+/* 文字サイズ                              */
+/******************************************/
+.text-11 {
+  /* ボタン文字サイズ */
+  font-size: 11px;
+}
+
+.text-10 {
+  /* 文字サイズ */
+  font-size: 10px;
+}
+
+.text-12 {
+  /* 文字サイズ */
+  font-size: 12px;
+}
+
+.text-14 {
+  /* 文字サイズ */
+  font-size: 14px;
+}
+
+.text-16 {
+  /* 文字サイズ */
+  font-size: 16px;
+}
+
+.text-18 {
+  /* 文字サイズ */
+  font-size: 18px;
+}
+
+.text-20 {
+  /* 文字サイズ */
+  font-size: 20px;
+}
+
+.text-24 {
+  /* 文字サイズ */
+  font-size: 24px;
+}
+
+.text-32 {
+  /* 文字サイズ */
+  font-size: 32px;
+}
+
+/******************************************/
+/* レイアウト                              */
+/******************************************/
+.hidden {
+  display: none;
+}
+
+.flex {
+  /* 要素を横向きに表示　*/
+  display: flex;
+}
+
+.block {
+  display: block;
+}
+
+.justify-between {
+  /* 要素を等間隔に配置 */
+  justify-content: space-between;
+}
+
+.align-center {
+  /* 縦方向に要素を中央揃え */
+  align-items: center;
+}
+
+/******************************************/
+/* ボーダー　                              */
+/******************************************/
+.border-right {
+  /* メニューの境界線 */
+  border-right: solid 1px #e4e4e4;
+}
+
+/******************************************/
+/* 文字装飾　                              */
+/******************************************/
+.text-black {
+  /* 文字色 黒 */
+  color: #384459;
+}
+
+.text-white {
+  /* 文字色 白 */
+  color: white;
+}
+
+.text-primary {
+  /* 文字色 メイン */
+  color: #007979;
+}
+
+.list-style-none {
+  /* ●を消す */
+  list-style: none;
+}
+
+.font-bold {
+  /* 太字　*/
+  font-weight: 600;
+}
+
+.decoration-none {
+  /* アンダーラインの削除 */
+  text-decoration: none;
+}
+
+.bg-primary {
+  /* ボタン背景色 */
+  background: #007979;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/******************************************/
+/* 幅　　　　                              */
+/******************************************/
+.w-100 {
+  width: 100px;
+}
+
+/******************************************/
+/* 空白（パディング）                       */
+/******************************************/
+.px-0 {
+  /*  要素の左右に空白を設定 0px */
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.px-20 {
+  /*  要素の左右に空白を設定 20px */
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.px-40 {
+  /* 要素の左右に空白を設定 40px */
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.py-15 {
+  /* 要素の上下に空白を設定 15px */
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.py-30 {
+  /* 要素の上下に空白を設定 30px */
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/******************************************/
+/* 空白（マージン）　                       */
+/******************************************/
+.ml-20 {
+  margin-left: 20px;
+}
+
+.mh-auto {
+  margin: 0 auto; /* 水平方向のマージン */
+}
+
+.mh-15 {
+  margin: 0 15px; /* 水平方向のマージン */
+}
+
+.mv-50 {
+  margin: 50px 0; /* 垂直方向のマージン */
+}
+
+/******************************************/
+/* 空白（ギャップ）　                       */
+/******************************************/
+.gap-x-10 {
+  /* 要素間に空白を設定　縦方向 0px 横方向 10px */
+  gap: 0px 10px;
+}
+
+/******************************************/
+/* ボタンアクション                        */
+/******************************************/
+.btn-hover:hover {
+  opacity: 0.7;
+  transition: 1s;
+}
+
+.logo-sp-disp-off {
+  display: none;
+}
+
+/******************************************/
+/* 表示位置　　　　                        */
+/******************************************/
+.pos-relative {
+  position: relative;
+}
+
+.pos-bottom {
+  position: relative;
+  z-index: 1;
+}
+
+.pos-top {
+  position: relative;
+  z-index: 2;
+}
+
+.vertical-align-middle {
+  vertical-align: middle;
+}
+
+/******************************************/
+/* ボタン　　　　　　                       */
+/******************************************/
+.btn {
+  display: flex;
+  font-size: 14px;
+  text-decoration: none; /* アンダーラインの削除 */
+  color: white; /* 文字色 白 */
+  font-weight: 700; /* 太字　*/
+  width: 220px; /* Hero ボタンの幅 220px */
+  gap: 0px 10px; /* 要素間に空白を設定　縦方向 0px 横方向 10px */
+
+  /* 要素の上下に空白を設定 15px */
+  padding-top: 15px;
+  padding-bottom: 15px;
+  /* 要素の左右に空白を設定 20px */
+  padding-left: 20px;
+  padding-right: 20px;
+  /* 角を丸く */
+  border-radius: 4px;
+  /* 背景色グラデーション */
+  background: linear-gradient(to right, #2ea1aa, #06bc7a);
+  box-shadow: 0px 4px 20px #ffffff, -4px -4px 20px #ffffff;
+  margin: 0 auto;
+}
+
+/******************************************/
+/* sm: witdh <= 767                       */
+/******************************************/
+@media screen and (max-width: 767px) {
+  .sm_text-10 {
+    font-size: 10px;
+  }
+
+  .sm_text-14 {
+    font-size: 14px;
+  }
+
+  .sm_text-16 {
+    font-size: 16px;
+  }
+
+  .sm_hidden {
+    display: none;
+  }
+
+  .sm_absolute {
+    position: absolute;
+  }
+
+  .sm_w-60 {
+    width: 60px;
+  }
+
+  .sm_x-w-8 {
+    /* xアイコンの幅 8px */
+    width: 8px;
+  }
+
+  .sm_gap-x-5 {
+    gap: 0px 5px;
+  }
+
+  .sm_px-20 {
+    /*  要素の左右に空白を設定 30px */
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .sm_hero-txt-pos {
+    position: absolute; /* 要素の配置方法を指定 */
+    /*background-color: #ccc;*/ /* 背景色指定 */
+    padding: 20px; /* 余白指定 */
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 380px;
+  }
+
+  .sm_hero-title-line {
+    top: -10px; /* HeroのTitleからの位置指定 */
+    /*width: 460px;*/
+  }
+
+  .sm_sympathy-bg-square {
+    /* Sympathy背景矩形幅用 */
+    width: 100%;
+    height: 650px;
+    background: #f1f7f8;
+    font-size: 12px;
+    color: #007979;
+  }
+
+  .sm_sympathy-margin {
+    /* マージン　上下5% 左右10%　*/
+    margin: 5% 10%;
+  }
+
+  .sm_sympathy-ruby-margin {
+    /* マージン　ルビの位置調整 10%　*/
+    margin-left: 20%;
+  }
+
+  .sm_sympathy-img01 {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    z-index: 2;
+  }
+
+  .sm_sympathy-img02 {
+    position: absolute;
+    top: 70%;
+    left: 80%;
+    transform: translate(-60%, 20%);
+    width: 100px;
+    z-index: 3;
+  }
+}
