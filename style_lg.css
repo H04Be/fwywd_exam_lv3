@@ -1,0 +1,103 @@
+/******************************************/
+/* lg: 1024 <= witdh                       */
+/******************************************/
+@media screen and (min-width: 1024px) {
+  .lg_flex {
+    display: flex;
+  }
+  body {
+    font-size: 16px;
+  }
+
+  .lg_text-11 {
+    font-size: 11px;
+  }
+
+  .lg_px-60 {
+    /*  要素の左右に空白を設定 60px */
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .lg_w-150 {
+    /* ロゴの幅 150px */
+    width: 150px;
+  }
+
+  .lg_w-100 {
+    /* Hero ロゴの幅 100px */
+    width: 100px;
+  }
+
+  .lg_w-550 {
+    /* Hero テキストの幅 550px */
+    width: 550px;
+  }
+
+  .lg_w-280 {
+    /* Hero ボタンの幅 280px */
+    width: 280px;
+  }
+
+  .lg_ml-10 {
+    /* ロゴのマージン左 */
+    margin-left: 10px;
+  }
+
+  .lg_gap-x-15 {
+    /* 要素間に空白を設定　縦方向 0px 横方向 30px */
+    gap: 0px 15px;
+  }
+
+  .lg_hero-txt-pos {
+    position: absolute; /* 要素の配置方法を指定 */
+    /*background-color: #ccc;*/ /* 背景色指定 */
+    padding: 20px; /* 余白指定 */
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    max-width: 50%;
+    margin-left: 2%;
+  }
+
+  .lg_hero-title-line {
+    top: -10px; /* HeroのTitleからの位置指定 */
+  }
+
+  .lg_sympathy-bg-square {
+    /* Sympathy背景矩形幅用 */
+    width: 90%;
+    height: 400px;
+    background: #f1f7f8;
+    font-size: 12px;
+    color: #007979;
+  }
+
+  .lg_sympathy-margin {
+    /* マージン　上下5% 左右10%　*/
+    margin: 5% 10%;
+  }
+
+  .lg_sympathy-ruby-margin {
+    /* マージン　ルビの位置調整 10%　*/
+    margin-left: 8%;
+  }
+
+  .lg_sympathy-img01 {
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-80%, -50%);
+    width: 350px;
+    z-index: 2;
+  }
+
+  .lg_sympathy-img02 {
+    position: absolute;
+    top: 70%;
+    left: 80%;
+    transform: translate(-50%, -10%);
+    width: 100px;
+    z-index: 3;
+  }
+}
