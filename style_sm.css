@@ -5,6 +5,7 @@ body {
   font-family: "Noto Sans JP";
   font-size: 12px;
   color: #384459;
+  min-width: 380px;
 }
 
 /******************************************/
@@ -265,6 +266,14 @@ body {
     font-size: 10px;
   }
 
+  .sm_text-14 {
+    font-size: 14px;
+  }
+
+  .sm_text-16 {
+    font-size: 16px;
+  }
+
   .sm_hidden {
     display: none;
   }
@@ -296,7 +305,7 @@ body {
     position: absolute; /* 要素の配置方法を指定 */
     /*background-color: #ccc;*/ /* 背景色指定 */
     padding: 20px; /* 余白指定 */
-    top: 10%;
+    top: 5%;
     left: 50%;
     transform: translate(-50%, 0%);
     width: 380px;
@@ -307,16 +316,40 @@ body {
     /*width: 460px;*/
   }
 
-  .sm_button-pos {
-    position: absolute; /* 要素の配置方法を指定 */
-    bottom: 0%;
-    left: 50%;
-    transform: translate(-50%, 140%);
+  .sm_sympathy-bg-square {
+    /* Sympathy背景矩形幅用 */
+    width: 100%;
+    height: 650px;
+    background: #f1f7f8;
+    font-size: 12px;
+    color: #007979;
   }
 
-  .sm_hero-bg-img02-pos {
-    position: absolute; /* 要素の配置方法を指定 */
-    bottom: 0%;
-    transform: translate(0%, 150%);
+  .sm_sympathy-margin {
+    /* マージン　上下5% 左右10%　*/
+    margin: 5% 10%;
+  }
+
+  .sm_sympathy-ruby-margin {
+    /* マージン　ルビの位置調整 10%　*/
+    margin-left: 20%;
+  }
+
+  .sm_sympathy-img01 {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    z-index: 2;
+  }
+
+  .sm_sympathy-img02 {
+    position: absolute;
+    top: 70%;
+    left: 80%;
+    transform: translate(-60%, 20%);
+    width: 100px;
+    z-index: 3;
   }
 }
