@@ -25,6 +25,12 @@
     padding-right: 20px;
   }
 
+  .md_px-0 {
+    /*  要素の左右に空白を設定 0px */
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   .md_hidden {
     display: none;
   }

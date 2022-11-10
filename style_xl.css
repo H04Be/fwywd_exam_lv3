@@ -19,6 +19,12 @@
     margin-left: 10px;
   }
 
+  /* 要素の左右に空白を設定（100px） */
+  .lx_px-100 {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
   .xl_hero-txt-pos {
     position: absolute; /* 要素の配置方法を指定 */
     /*background-color: #ccc;*/ /* 背景色指定 */

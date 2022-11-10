@@ -39,6 +39,11 @@
     width: 280px;
   }
 
+  /* Solution Sammary */
+  .lg_w-800 {
+    width: 800px;
+  }
+
   .lg_ml-10 {
     /* ロゴのマージン左 */
     margin-left: 10px;
@@ -47,6 +52,10 @@
   .lg_gap-x-15 {
     /* 要素間に空白を設定　縦方向 0px 横方向 30px */
     gap: 0px 15px;
+  }
+
+  .lg_absolute {
+    position: absolute;
   }
 
   .lg_hero-txt-pos {
@@ -68,9 +77,9 @@
     /* Sympathy背景矩形幅用 */
     width: 90%;
     height: 400px;
-    background: #f1f7f8;
+    /* background: #f1f7f8;
     font-size: 12px;
-    color: #007979;
+    color: #007979;*/
   }
 
   .lg_sympathy-margin {
@@ -99,5 +108,27 @@
     transform: translate(-50%, -10%);
     width: 100px;
     z-index: 3;
+  }
+
+  /* solution　左側の人 */
+  .lg_sol-human01 {
+    position: absolute;
+    bottom: 0%;
+    left: -5%;
+    width: 95px;
+  }
+
+  /* solution　右側の人 */
+  .lg_sol-human02 {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    width: 65px;
+  }
+
+  /* 要素の左右に空白を設定（100px） */
+  .lg_px-30 {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
