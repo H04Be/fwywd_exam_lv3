@@ -143,6 +143,11 @@ body {
   text-align: center;
 }
 
+/* 文字配置（左寄せ） */
+.text-left {
+  text-align: left;
+}
+
 /******************************************/
 /* 背景色　                              */
 /******************************************/
@@ -208,7 +213,7 @@ body {
 }
 
 .h-440 {
-  height: 480px;
+  height: 440px;
 }
 
 .h-800 {
@@ -267,6 +272,21 @@ body {
   padding-bottom: 80px;
 }
 
+/* 要素の下に空白を設定（10px） */
+.p-bottom-10 {
+  padding-bottom: 10px;
+}
+
+/* 要素の上に空白を設定（10px） */
+.p-top-10 {
+  padding-top: 10px;
+}
+
+/* 要素の上に空白を設定（20px） */
+.p-top-20 {
+  padding-top: 20px;
+}
+
 /* 要素の上に空白を設定（30px） */
 .p-top-30 {
   padding-top: 30px;
@@ -315,6 +335,11 @@ body {
 /* 垂直方向のマージン（上下 50px、左右 0px）*/
 .mv-50 {
   margin: 50px 0;
+}
+
+/* トップのマージン（20px） */
+.mt-20 {
+  margin-top: 20px;
 }
 
 /* トップのマージン（200px） */
@@ -425,6 +450,10 @@ body {
     font-size: 10px;
   }
 
+  .sm_text-12 {
+    font-size: 12px;
+  }
+
   .sm_text-14 {
     font-size: 14px;
   }
@@ -439,6 +468,10 @@ body {
 
   .sm_text-20 {
     font-size: 20px;
+  }
+
+  .sm_text-32 {
+    font-size: 32px;
   }
 
   /******************************************/
@@ -456,6 +489,14 @@ body {
     display: block;
   }
 
+  .sm_hidden {
+    display: none;
+  }
+
+  .sm_display {
+    display: inline;
+  }
+
   /******************************************/
   /* 要素の開始位置　                         */
   /******************************************/
@@ -463,8 +504,8 @@ body {
     top: -10px;
   }
 
-  .sm_top-minus-2-percent {
-    top: -2%;
+  .sm_top-minus-4-percent {
+    top: -4%;
   }
 
   .sm_left-40-percent {
@@ -492,8 +533,37 @@ body {
   }
 
   /******************************************/
+  /* 要素の高さ                              */
+  /******************************************/
+  .sm_h-30 {
+    height: 30px;
+  }
+
+  .sm_h-290 {
+    height: 290px;
+  }
+
+  .sm_h-440 {
+    height: 440px;
+  }
+
+  .sm_h-842 {
+    height: 842px;
+  }
+
+  /* Solution01 背景高さ */
+  .sm_h-1030 {
+    height: 1030px;
+  }
+
+  /******************************************/
   /* 要素の外側に空白（マージン）              */
   /******************************************/
+  /* マージン（上下 0px、左右 自動） */
+  .sm_margin-0-auto {
+    margin: 0px auto;
+  }
+
   /* マージン（上下 20px、左右 自動） */
   .sm_margin-20-auto {
     margin: 20px auto;
@@ -502,6 +572,16 @@ body {
   /* マージン（上下 20px 左右 20px ）*/
   .sm_margin-20 {
     margin: 20px 20px;
+  }
+
+  /* マージン（上下 100px、左右 20px） */
+  .sm_m-100-20 {
+    margin: 100px 20px;
+  }
+
+  /* マージン（上下 50px、左右 200px） */
+  .sm_m-50-200 {
+    margin: 50px 200px;
   }
 
   /******************************************/
@@ -524,6 +604,12 @@ body {
   .sm_px-50 {
     padding-left: 50px;
     padding-right: 50px;
+  }
+
+  /*  要素に空白を設定 （上下 50px） */
+  .sm_py-50 {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   /******************************************/
@@ -598,5 +684,21 @@ body {
     bottom: 2%;
     right: 5%;
     width: 60px;
+  }
+
+  /* solution　棒グラフ */
+  .sm_sol-img01 {
+    position: absolute;
+    bottom: 50%;
+    right: 0%;
+    width: 85px;
+  }
+
+  /* solution　本 */
+  .sm_sol-img02 {
+    position: absolute;
+    bottom: 5%;
+    right: 0%;
+    width: 70px;
   }
 }
