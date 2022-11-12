@@ -470,6 +470,10 @@ body {
     font-size: 20px;
   }
 
+  .sm_text-24 {
+    font-size: 24px;
+  }
+
   .sm_text-32 {
     font-size: 32px;
   }
@@ -530,6 +534,10 @@ body {
 
   .sm_w-70-percent {
     width: 70%;
+  }
+
+  .sm_min-w-480 {
+    min-width: 480px;
   }
 
   /******************************************/
@@ -691,7 +699,7 @@ body {
     position: absolute;
     bottom: 50%;
     right: 0%;
-    width: 85px;
+    width: 75px;
   }
 
   /* solution　本 */
