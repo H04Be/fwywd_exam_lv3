@@ -25,6 +25,14 @@
     font-size: 20px;
   }
 
+  .md_text-24 {
+    font-size: 24px;
+  }
+
+  .md_text-28 {
+    font-size: 28px;
+  }
+
   /******************************************/
   /* 文字装飾　                              */
   /******************************************/
@@ -58,6 +66,10 @@
     flex-direction: column;
   }
 
+  .md_br {
+    display: block;
+  }
+
   /******************************************/
   /* 要素の開始位置　                         */
   /******************************************/
@@ -73,6 +85,10 @@
     left: 45%;
   }
 
+  .md_top-10 {
+    top: 10px;
+  }
+
   /******************************************/
   /* 要素の幅　                              */
   /******************************************/
@@ -81,9 +97,19 @@
     width: 60px;
   }
 
+  /* Hero02 ロゴの幅 120px */
+  .md_w-120 {
+    width: 120px;
+  }
+
   /* xアイコンの幅 10px */
   .md_x-w-10 {
     width: 10px;
+  }
+
+  /* Hero02 bg SP */
+  .md_w-768 {
+    width: 768px;
   }
 
   .md_w-80-percent {
@@ -138,6 +164,16 @@
   /* マージン（上下 50px、左右 200px） */
   .md_m-50-200 {
     margin: 50px 200px;
+  }
+
+  /* マージン（左 190px） */
+  .md_ml-190 {
+    margin-left: 190px;
+  }
+
+  /* マージン（左 10px） */
+  .md_ml-10 {
+    margin-left: 10px;
   }
 
   /******************************************/
@@ -260,5 +296,44 @@
     bottom: 0%;
     right: 0%;
     width: 80px;
+  }
+
+  /******************************************/
+  /* Hero02セクション                          */
+  /******************************************/
+  .md_hero02-txt-pos {
+    position: absolute; /* 要素の配置方法を指定 */
+    /*background-color: #ccc;*/ /* 背景色指定 */
+    padding: 20px; /* 余白指定 */
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    width: 80%;
+  }
+
+  /******************************************/
+  /* Hero02 ボタン　　　　　　                       */
+  /******************************************/
+  .md_btn {
+    display: flex;
+    font-size: 20px;
+    text-decoration: none; /* アンダーラインの削除 */
+    color: white; /* 文字色 白 */
+    font-weight: 700; /* 太字　*/
+    width: 320px; /* Hero ボタンの幅 220px */
+    gap: 0px 10px; /* 要素間に空白を設定　縦方向 0px 横方向 10px */
+
+    /* 要素の上下に空白を設定 15px */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* 要素の左右に空白を設定 20px */
+    padding-left: 30px;
+    padding-right: 30px;
+    /* 角を丸く */
+    border-radius: 4px;
+    /* 背景色グラデーション */
+    background: linear-gradient(to right, #2ea1aa, #06bc7a);
+    box-shadow: 0px 4px 20px #ffffff, -4px -4px 20px #ffffff;
+    margin: 0 auto;
   }
 }

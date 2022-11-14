@@ -9,8 +9,16 @@
   /******************************************/
   /* 文字サイズ                              */
   /******************************************/
+  .lg_text-10 {
+    font-size: 10px;
+  }
+
   .lg_text-11 {
     font-size: 11px;
+  }
+
+  .lg_text-12 {
+    font-size: 12px;
   }
 
   .lg_text-14 {
@@ -23,6 +31,13 @@
 
   .lg_text-18 {
     font-size: 18px;
+  }
+
+  /******************************************/
+  /* 文字装飾　                              */
+  /******************************************/
+  .lg_text-left {
+    text-align: left;
   }
 
   /******************************************/
@@ -53,6 +68,10 @@
   /******************************************/
   /* 要素の開始位置　                         */
   /******************************************/
+  .lg_top-10 {
+    top: 10px;
+  }
+
   .lg_top-minus-10 {
     top: -10px;
   }
@@ -63,6 +82,14 @@
 
   .lg_left-43-percent {
     left: 43%;
+  }
+
+  .lg_top {
+    top: 0px;
+  }
+
+  .lg_left {
+    left: 0px;
   }
 
   /******************************************/
@@ -86,6 +113,11 @@
   /* 横向き矢印 55px */
   .lg_w-55 {
     width: 55px;
+  }
+
+  /* Hero02 ロゴの幅 70px */
+  .lg_w-70 {
+    width: 70px;
   }
 
   /* ロゴの幅 150px */
@@ -125,6 +157,10 @@
     width: 800px;
   }
 
+  .lg_w-1024 {
+    width: 1024px;
+  }
+
   .lg_w-20-percent {
     width: 20%;
   }
@@ -144,12 +180,16 @@
     height: 100px;
   }
 
-  .lg_h-330 {
-    height: 230px;
+  .lg_h-290 {
+    height: 290px;
   }
 
   .lg_h-390 {
     height: 390px;
+  }
+
+  .lg_h-550 {
+    height: 550px;
   }
 
   .lg_h-780 {
@@ -170,6 +210,16 @@
   /* ロゴのマージン左 */
   .lg_ml-10 {
     margin-left: 10px;
+  }
+
+  /* Hero01 ロゴのマージン左 */
+  .lg_ml-80 {
+    margin-left: 80px;
+  }
+
+  /* Hero02 ロゴのマージン左 */
+  .lg_ml-70 {
+    margin-left: 70px;
   }
 
   /* 水平方向のマージン（上下 0、左右 30px） */
@@ -204,6 +254,13 @@
   /* マージン（上下 100px 左右 60px ）*/
   .lg_m-100-60 {
     margin: 100px 60px;
+  }
+
+  /* マージン（上下 40px 左右 60px ）*/
+  .lg_m-hero02 {
+    /*margin: 40px auto;*/
+    margin-top: 0px;
+    margin-left: 470px;
   }
 
   .lg_mh-90 {
@@ -304,5 +361,44 @@
     bottom: 0%;
     right: 0%;
     width: 80px;
+  }
+
+  /******************************************/
+  /* Hero02セクション                          */
+  /******************************************/
+  .lg_hero02-txt-pos {
+    position: absolute; /* 要素の配置方法を指定 */
+    /*background-color: #ccc;*/ /* 背景色指定 */
+    padding: 20px; /* 余白指定 */
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    width: 300px;
+  }
+
+  /******************************************/
+  /* Hero02 ボタン　　　　　　                       */
+  /******************************************/
+  .lg_btn {
+    display: flex;
+    font-size: 14px;
+    text-decoration: none; /* アンダーラインの削除 */
+    color: white; /* 文字色 白 */
+    font-weight: 700; /* 太字　*/
+    width: 220px; /* Hero ボタンの幅 220px */
+    gap: 0px 10px; /* 要素間に空白を設定　縦方向 0px 横方向 10px */
+
+    /* 要素の上下に空白を設定 15px */
+    padding-top: 15px;
+    padding-bottom: 15px;
+    /* 要素の左右に空白を設定 20px */
+    padding-left: 20px;
+    padding-right: 20px;
+    /* 角を丸く */
+    border-radius: 4px;
+    /* 背景色グラデーション */
+    background: linear-gradient(to right, #2ea1aa, #06bc7a);
+    box-shadow: 0px 4px 20px #ffffff, -4px -4px 20px #ffffff;
+    margin: 0 auto;
   }
 }
