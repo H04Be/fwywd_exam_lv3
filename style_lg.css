@@ -427,48 +427,4 @@
     box-shadow: 0px 4px 20px #ffffff, -4px -4px 20px #ffffff;
     margin: 0 auto;
   }
-
-  /******************************************/
-  /* 差別化ポイント関連                      */
-  /******************************************/
-  /* 見出し表示開始位置 */
-  .lg_diff-title-pos {
-    position: absolute;
-    top: 50px;
-    left: 50%;
-    transform: translate(-50%, 0%);
-  }
-
-  /* 差別化ポイント配置用 表示枠（開始位置、表示方法） */
-  .lg_diff-bg-box {
-    /* 表示開始位置 */
-    position: absolute;
-    top: 120px;
-    margin-left: 10%;
-    margin-right: 10%;
-
-    /* 表示方法 */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    /* デバッグ用 */
-    /*background: red;
-    border: 1px solid #999;
-    padding: 10px;*/
-  }
-
-  /* 各差別化ポイント用　表示枠（サイズ、マージン） */
-  .lg_diff-item-box {
-    position: relative;
-
-    /* サイズ、色、丸め */
-    width: 190px;
-    height: 320px;
-    background: white;
-    border-radius: 16px;
-
-    /* マージン */
-    margin: 20px;
-  }
 }
