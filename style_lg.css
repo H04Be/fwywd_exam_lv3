@@ -72,6 +72,10 @@
     top: 10px;
   }
 
+  .lg_top-120 {
+    top: 120px;
+  }
+
   .lg_top-minus-10 {
     top: -10px;
   }
@@ -130,6 +134,10 @@
     width: 100px;
   }
 
+  .lg_w-190 {
+    width: 190px;
+  }
+
   .lg_w-370 {
     width: 370px;
   }
@@ -180,6 +188,10 @@
     height: 100px;
   }
 
+  .lg_h-260 {
+    height: 260px;
+  }
+
   .lg_h-290 {
     height: 290px;
   }
@@ -198,6 +210,10 @@
 
   .lg_h-852 {
     height: 852px;
+  }
+
+  .lg_h-900 {
+    height: 900px;
   }
 
   .lg_h-1200 {
@@ -220,6 +236,11 @@
   /* Hero02 ロゴのマージン左 */
   .lg_ml-70 {
     margin-left: 70px;
+  }
+
+  /* 水平方向のマージン（上下 0、左右 5px） */
+  .lg_mh-10 {
+    margin: 0 10px;
   }
 
   /* 水平方向のマージン（上下 0、左右 30px） */
@@ -266,6 +287,11 @@
   .lg_mh-90 {
     margin-left: 90px;
     margin-right: 90px;
+  }
+
+  .lg_mv-t10-b5 {
+    margin-top: 10px;
+    margin-bottom: 5px;
   }
 
   /******************************************/
@@ -377,7 +403,7 @@
   }
 
   /******************************************/
-  /* Hero02 ボタン　　　　　　                       */
+  /* Hero02 ボタン　　                       */
   /******************************************/
   .lg_btn {
     display: flex;
@@ -400,5 +426,49 @@
     background: linear-gradient(to right, #2ea1aa, #06bc7a);
     box-shadow: 0px 4px 20px #ffffff, -4px -4px 20px #ffffff;
     margin: 0 auto;
+  }
+
+  /******************************************/
+  /* 差別化ポイント関連                      */
+  /******************************************/
+  /* 見出し表示開始位置 */
+  .lg_diff-title-pos {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+
+  /* 差別化ポイント配置用 表示枠（開始位置、表示方法） */
+  .lg_diff-bg-box {
+    /* 表示開始位置 */
+    position: absolute;
+    top: 120px;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    /* 表示方法 */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    /* デバッグ用 */
+    /*background: red;
+    border: 1px solid #999;
+    padding: 10px;*/
+  }
+
+  /* 各差別化ポイント用　表示枠（サイズ、マージン） */
+  .lg_diff-item-box {
+    position: relative;
+
+    /* サイズ、色、丸め */
+    width: 190px;
+    height: 320px;
+    background: white;
+    border-radius: 16px;
+
+    /* マージン */
+    margin: 20px;
   }
 }

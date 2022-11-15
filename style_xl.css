@@ -130,4 +130,23 @@
     right: 5%;
     width: 90px;
   }
+
+  /* 差別化ポイント配置用 表示枠（開始位置、表示方法） */
+  .lg_diff-bg-box {
+    /* 表示開始位置 */
+    /*position: absolute;
+    top: 120px;*/
+    margin-left: 15%;
+    margin-right: 15%;
+
+    /* 表示方法 */
+    /*display: flex;
+    flex-wrap: wrap;
+    justify-content: center;*/
+
+    /* デバッグ用 */
+    /*background: red;
+  border: 1px solid #999;
+  padding: 10px;*/
+  }
 }
