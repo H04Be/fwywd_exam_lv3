@@ -13,6 +13,10 @@
     font-size: 10px;
   }
 
+  .md_text-12 {
+    font-size: 12px;
+  }
+
   .md_text-14 {
     font-size: 14px;
   }
@@ -106,6 +110,11 @@
     width: 120px;
   }
 
+  /* ユーザーの声 画像の幅 */
+  .md_w-100 {
+    width: 100px;
+  }
+
   /* xアイコンの幅 10px */
   .md_x-w-10 {
     width: 10px;
@@ -192,6 +201,16 @@
   .md_mv-t10-b5 {
     margin-top: 10px;
     margin-bottom: 5px;
+  }
+
+  /* マージン（上 -80px 左右 自動 ）
+  　　ユーザーの声 顔写真            */
+  .md_m--80-auto {
+    margin: -80px auto;
+  }
+
+  .md_m-t90 {
+    margin-top: 90px;
   }
 
   /******************************************/
@@ -389,5 +408,46 @@
 
     /* マージン */
     margin: 20px;
+  }
+
+  /******************************************/
+  /* ユーザーの声関連                         */
+  /******************************************/
+  /* ユーザーの声配置用 表示枠（開始位置、表示方法） */
+  .uv-bg-box {
+    /* 表示開始位置 */
+    /*position: absolute;
+    top: 120px;*/
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+
+    /* 表示方法 */
+    /*display: flex;
+    flex-wrap: wrap;
+    justify-content: center;*/
+
+    /* デバッグ用 */
+    /*background: red;
+    border: 1px solid #999;
+    padding: 10px;*/
+  }
+
+  .uv-item-box {
+    /*position: relative;*/
+
+    /* サイズ、色、丸め */
+    width: 330px;
+    /*background: linear-gradient(to right, #2ea1aa, #06bc7a 100%);*/
+    /*padding: 3px;*/ /*borderの太さ*/
+    /*border-radius: 16px;*/
+
+    /*margin: 50px 20px;*/
+  }
+
+  .border-gradation-radius-wrap {
+    /*border-radius: 16px;*/
+    /*background: #fff;*/ /*背景を白*/
+    padding: 25px;
   }
 }

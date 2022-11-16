@@ -509,43 +509,9 @@ body {
   justify-content: center;
 
   /* デバッグ用 */
-  background: red;
+  /*background: red;
   border: 1px solid #999;
-  padding: 10px;
-}
-
-/* 各差別化ポイント用　表示枠（サイズ、マージン） */
-/* 背景枠（奥）表示位置 */
-.uv-item-box-back {
-  position: relative;
-
-  top: 10px;
-  left: 0px;
-  /* サイズ、色、丸め */
-  width: 320px;
-}
-
-/* 背景枠（手前）表示位置 */
-.uv-item-box-front {
-  position: absolute;
-
-  top: 10px;
-  left: 10px;
-  /* サイズ、色、丸め */
-  width: 320px;
-}
-
-/* ユーザー画像　表示位置*/
-.uv-user-img {
-  position: absolute;
-
-  /* サイズ*/
-  width: 100px;
-
-  top: 0px;
-  left: 50%;
-  transform: translate(-50%, -0%);
-  z-index: 3;
+  padding: 10px;*/
 }
 
 .uv-item-box {
@@ -673,6 +639,11 @@ body {
     width: 100px;
   }
 
+  /* ユーザーの声 画像の幅 */
+  .sm_w-150 {
+    width: 150px;
+  }
+
   /* 差別化ポイント 画像*/
   .sm_w-380 {
     width: 380px;
@@ -721,6 +692,11 @@ body {
   /* Difference 背景高さ */
   .sm_h-2300 {
     height: 2300px;
+  }
+
+  /* UserVoice 背景高さ */
+  .sm_h-1800 {
+    height: 1800px;
   }
 
   /******************************************/
@@ -774,6 +750,16 @@ body {
   .sm_mv-t10-b5 {
     margin-top: 10px;
     margin-bottom: 5px;
+  }
+
+  /* マージン（上 -80px 左右 自動 ）
+  　　ユーザーの声 顔写真            */
+  .sm_m--80-auto {
+    margin: -80px auto;
+  }
+
+  .sm_m-t90 {
+    margin-top: 90px;
   }
 
   /******************************************/

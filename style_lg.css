@@ -277,7 +277,7 @@
     margin: 100px 60px;
   }
 
-  /* マージン（上 -50px 左右 自動 ）*/
+  /* マージン（上 -80px 左右 自動 ）*/
   .lg_m--80-auto {
     margin: -80px auto;
   }
@@ -461,5 +461,46 @@
     /*background: red;
     border: 1px solid #999;
     padding: 10px;*/
+  }
+
+  /******************************************/
+  /* ユーザーの声関連                      */
+  /******************************************/
+  /* ユーザーの声配置用 表示枠（開始位置、表示方法） */
+  .uv-bg-box {
+    /* 表示開始位置 */
+    position: absolute;
+    top: 120px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    /* 表示方法 */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    /* デバッグ用 */
+    /*background: red;
+    border: 1px solid #999;
+    padding: 10px;*/
+  }
+
+  .uv-item-box {
+    position: relative;
+
+    /* サイズ、色、丸め */
+    width: 350px;
+    background: linear-gradient(to right, #2ea1aa, #06bc7a 100%);
+    padding: 3px; /*borderの太さ*/
+    border-radius: 16px;
+
+    margin: 50px 20px;
+  }
+
+  .border-gradation-radius-wrap {
+    border-radius: 16px;
+    background: #fff; /*背景を白*/
+    padding: 40px;
   }
 }
