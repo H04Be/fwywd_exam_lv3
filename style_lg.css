@@ -277,6 +277,11 @@
     margin: 100px 60px;
   }
 
+  /* マージン（上 -50px 左右 自動 ）*/
+  .lg_m--80-auto {
+    margin: -80px auto;
+  }
+
   /* マージン（上下 40px 左右 60px ）*/
   .lg_m-hero02 {
     /*margin: 40px auto;*/
@@ -292,6 +297,14 @@
   .lg_mv-t10-b5 {
     margin-top: 10px;
     margin-bottom: 5px;
+  }
+
+  .lg_m-t50 {
+    margin-top: 50px;
+  }
+
+  .lg_m-t90 {
+    margin-top: 90px;
   }
 
   /******************************************/

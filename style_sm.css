@@ -484,6 +484,89 @@ body {
 }
 
 /******************************************/
+/* ユーザーの声関連                      */
+/******************************************/
+/* 見出し表示開始位置 */
+.uv-title-pos {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+/* ユーザーの声配置用 表示枠（開始位置、表示方法） */
+.uv-bg-box {
+  /* 表示開始位置 */
+  position: absolute;
+  top: 120px;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+
+  /* 表示方法 */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  /* デバッグ用 */
+  background: red;
+  border: 1px solid #999;
+  padding: 10px;
+}
+
+/* 各差別化ポイント用　表示枠（サイズ、マージン） */
+/* 背景枠（奥）表示位置 */
+.uv-item-box-back {
+  position: relative;
+
+  top: 10px;
+  left: 0px;
+  /* サイズ、色、丸め */
+  width: 320px;
+}
+
+/* 背景枠（手前）表示位置 */
+.uv-item-box-front {
+  position: absolute;
+
+  top: 10px;
+  left: 10px;
+  /* サイズ、色、丸め */
+  width: 320px;
+}
+
+/* ユーザー画像　表示位置*/
+.uv-user-img {
+  position: absolute;
+
+  /* サイズ*/
+  width: 100px;
+
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%, -0%);
+  z-index: 3;
+}
+
+.uv-item-box {
+  position: relative;
+
+  /* サイズ、色、丸め */
+  width: 350px;
+  background: linear-gradient(to right, #2ea1aa, #06bc7a 100%);
+  padding: 3px; /*borderの太さ*/
+  border-radius: 16px;
+
+  margin: 50px 20px;
+}
+
+.border-gradation-radius-wrap {
+  border-radius: 16px;
+  background: #fff; /*背景を白*/
+  padding: 20px;
+}
+
+/******************************************/
 /* sm: witdh <= 767                       */
 /******************************************/
 @media screen and (max-width: 767px) {
