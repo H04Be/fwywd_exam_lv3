@@ -140,6 +140,10 @@
     height: 900px;
   }
 
+  .md_h-1200 {
+    height: 1200px;
+  }
+
   /******************************************/
   /* 要素の外側に空白（マージン）              */
   /******************************************/
@@ -449,5 +453,62 @@
     /*border-radius: 16px;*/
     /*background: #fff;*/ /*背景を白*/
     padding: 25px;
+  }
+
+  /******************************************/
+  /* 料金関連                               */
+  /******************************************/
+  /* スタンダード料金用　表示枠（サイズ、マージン） */
+  .pricing-standard-item-box {
+    /*position: relative;*/
+
+    /* サイズ、色、丸め */
+    /*width: 190px;
+    height: 320px;
+    background: white;
+    border-radius: 16px;
+    border: 2px solid #f2c94c;*/
+
+    /* マージン */
+    /*margin: 25px;*/
+  }
+
+  /* プラスアイコン　表示位置 */
+  .pricing-plus-pos {
+    /*position: absolute;*/
+
+    margin-top: 900px;
+    /*margin-left: 50%;
+    transform: translate(-50%, 0%);*/
+  }
+
+  /* 入学金　表示位置 */
+  .pricing-enrollmentfee-pos {
+    /*position: absolute;*/
+
+    /*width: 80%;
+    text-align: center;*/
+
+    margin-top: 950px;
+    /*margin-left: 50%;
+    transform: translate(-50%, 0%);
+    border: 2px solid #e1e1e1;
+    border-radius: 16px;
+
+    padding-top: 20px;
+    padding-bottom: 20px;*/
+  }
+
+  /* 料金プランの並び順 */
+  .md_order-1 {
+    order: 1;
+  }
+
+  .md_order-2 {
+    order: 2;
+  }
+
+  .md_order-3 {
+    order: 3;
   }
 }

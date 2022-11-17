@@ -503,4 +503,46 @@
     background: #fff; /*背景を白*/
     padding: 40px;
   }
+
+  /******************************************/
+  /* 料金関連                               */
+  /******************************************/
+  /* プラスアイコン　表示位置 */
+  .pricing-plus-pos {
+    /*position: absolute;*/
+
+    margin-top: 550px;
+    /*margin-left: 50%;
+    transform: translate(-50%, 0%);*/
+  }
+
+  /* 入学金　表示位置 */
+  .pricing-enrollmentfee-pos {
+    /*position: absolute;*/
+
+    /*width: 80%;
+    text-align: center;*/
+
+    margin-top: 600px;
+    /*margin-left: 50%;
+    transform: translate(-50%, 0%);
+    border: 2px solid #e1e1e1;
+    border-radius: 16px;
+
+    padding-top: 20px;
+    padding-bottom: 20px;*/
+  }
+
+  /* 料金プランの並び順 */
+  .lg_order-1 {
+    order: 1;
+  }
+
+  .lg_order-2 {
+    order: 2;
+  }
+
+  .lg_order-3 {
+    order: 3;
+  }
 }
