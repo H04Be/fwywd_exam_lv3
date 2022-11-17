@@ -97,6 +97,12 @@
     top: 10px;
   }
 
+  .md_h-center {
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+
   /******************************************/
   /* 要素の幅　                              */
   /******************************************/
@@ -207,6 +213,23 @@
     margin-bottom: 5px;
   }
 
+  .md_mv-t20-b50 {
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  /* 水平方向のマージン（左右 80px） */
+  .md_mh-80 {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+
+  /* 垂直方向のマージン（上下 10px、左右 なし） */
+  .md_mv-10 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
   /* マージン（上 -80px 左右 自動 ）
   　　ユーザーの声 顔写真            */
   .md_m--80-auto {
@@ -215,6 +238,10 @@
 
   .md_m-t90 {
     margin-top: 90px;
+  }
+
+  .md_m-b80 {
+    margin-bottom: 80px;
   }
 
   /******************************************/
@@ -510,5 +537,18 @@
 
   .md_order-3 {
     order: 3;
+  }
+
+  /******************************************/
+  /* Hero03セクション                        */
+  /******************************************/
+  .md_hero03-txt-pos {
+    position: absolute; /* 要素の配置方法を指定 */
+    /*background-color: #ccc;*/ /* 背景色指定 */
+    padding: 20px; /* 余白指定 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
   }
 }

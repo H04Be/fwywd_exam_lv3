@@ -364,6 +364,12 @@ table {
   margin: 0 40px;
 }
 
+/* 水平方向のマージン（左右 20px） */
+.mh-20 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 /* 水平方向のマージン（上下 0、左右 60px） */
 .mh-60 {
   margin: 0 60px;
@@ -697,6 +703,10 @@ table {
     font-size: 10px;
   }
 
+  .sm_text-11 {
+    font-size: 11px;
+  }
+
   .sm_text-12 {
     font-size: 12px;
   }
@@ -776,6 +786,12 @@ table {
 
   .sm_top-10 {
     top: 10px;
+  }
+
+  .sm_h-center {
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
   }
 
   /******************************************/
@@ -908,6 +924,23 @@ table {
     margin-bottom: 5px;
   }
 
+  .sm_mv-t20-b50 {
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  /* 水平方向のマージン（左右 20px） */
+  .sm_mh-20 {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  /* 垂直方向のマージン（上下 10px、左右 なし） */
+  .sm_mv-10 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
   /* マージン（上 -80px 左右 自動 ）
   　　ユーザーの声 顔写真            */
   .sm_m--80-auto {
@@ -916,6 +949,10 @@ table {
 
   .sm_m-t90 {
     margin-top: 90px;
+  }
+
+  .sm_m-b60 {
+    margin-bottom: 60px;
   }
 
   /******************************************/
@@ -1153,5 +1190,18 @@ table {
 
   .sm_order-3 {
     order: 3;
+  }
+
+  /******************************************/
+  /* Hero03セクション                        */
+  /******************************************/
+  .sm_hero03-txt-pos {
+    position: absolute; /* 要素の配置方法を指定 */
+    /*background-color: #ccc;*/ /* 背景色指定 */
+    padding: 20px; /* 余白指定 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
   }
 }
