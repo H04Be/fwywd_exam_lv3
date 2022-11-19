@@ -20,6 +20,10 @@
     width: 1000px;
   }
 
+  .xl_w-1280 {
+    width: 1280px;
+  }
+
   .xl_max-w-1280 {
     max-width: 1280px;
   }
