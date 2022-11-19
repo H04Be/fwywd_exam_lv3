@@ -214,6 +214,11 @@ table {
   background: red;
 }
 
+/* 黒 */
+.bg-black {
+  background: #384459;
+}
+
 /* リニア */
 .bg-linear {
   background: linear-gradient(to right, #2ea1aa, #06bc7a);
@@ -373,6 +378,16 @@ table {
 /* 水平方向のマージン（上下 0、左右 60px） */
 .mh-60 {
   margin: 0 60px;
+}
+
+/* 垂直方向のマージン（上下 auto、左右 なし） */
+.mv-auto {
+  margin: auto 0;
+}
+
+/* マージン（上下 10px、左右 10%） */
+.m-h10-v10 {
+  margin: 10px 10%;
 }
 
 /* 垂直方向のマージン（上下 10px、左右 なし） */
@@ -794,9 +809,19 @@ table {
     transform: translate(-50%, 0%);
   }
 
+  .sm_ftr-sns-text {
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+  }
+
   /******************************************/
   /* 要素の幅　                              */
   /******************************************/
+  .sm_w-35 {
+    width: 35px;
+  }
+
   .sm_w-60 {
     width: 60px;
   }
@@ -826,6 +851,10 @@ table {
 
   .sm_w-70-percent {
     width: 70%;
+  }
+
+  .sm_w-90-percent {
+    width: 90%;
   }
 
   .sm_min-w-480 {
@@ -909,6 +938,11 @@ table {
     margin: 50px 200px;
   }
 
+  /* ロゴのマージン左 */
+  .sm_ml-5-per {
+    margin-left: 5%;
+  }
+
   /* マージン（左 80px） */
   .sm_ml-80 {
     margin-left: 80px;
@@ -955,11 +989,31 @@ table {
     margin-bottom: 60px;
   }
 
+  .sm_mh-center {
+    margin-left: 50%;
+    transform: translate(-50%, 0%);
+  }
+
+  /* Footer About マージン左 */
+  .sm_mr-70 {
+    margin-right: 70px;
+  }
+
+  /* マージン（上下 5px、左右 5%） */
+  .sm_m-h5-v5 {
+    margin: 5px 5%;
+  }
+
   /******************************************/
   /* 要素間の空白（ギャップ）　               */
   /******************************************/
   .sm_gap-x-5 {
     gap: 0px 5px;
+  }
+
+  /* 要素間に空白を設定　縦方向 0px 横方向 15px */
+  .sm_gap-x-15 {
+    gap: 0px 15px;
   }
 
   /******************************************/
@@ -981,6 +1035,22 @@ table {
   .sm_py-50 {
     padding-top: 50px;
     padding-bottom: 50px;
+  }
+
+  /*  要素に空白を設定 （上 20px 下 10px） */
+  .sm_p-t20-b10 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  /*  要素に空白を設定 （上 20px） */
+  .sm_p-top-20 {
+    padding-top: 20px;
+  }
+
+  /*  要素に空白を設定 （左 5%） */
+  .sm_p-l-5-per {
+    padding-left: 5%;
   }
 
   /******************************************/
