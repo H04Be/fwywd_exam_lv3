@@ -78,7 +78,7 @@
     display: block;
   }
 
-  .md_block {
+  .md_display-block {
     display: block;
   }
 
@@ -269,6 +269,11 @@
     margin-bottom: 10px;
   }
 
+  /* マージン（上下 10px、左右 70px） */
+  .md_m-v10-h70 {
+    margin: 10px 70px;
+  }
+
   /* マージン（上 -80px 左右 自動 ）
   　　ユーザーの声 顔写真            */
   .md_m--80-auto {
@@ -312,10 +317,10 @@
     padding-left: 40px;
   }
 
-  /*  要素の左右に空白を設定 20px */
-  .md_px-20 {
-    padding-left: 20px;
-    padding-right: 20px;
+  /*  要素の左右に空白を設定 35px */
+  .md_px-35 {
+    padding-left: 35px;
+    padding-right: 35px;
   }
 
   /*  要素の左右に空白を設定 40px */
@@ -610,6 +615,18 @@
 
   .md_order-3 {
     order: 3;
+  }
+
+  /******************************************/
+  /* Hero03 背景画像　                       */
+  /******************************************/
+  .md_hero03-bg-img {
+    width: 768px;
+    height: 1127px;
+    background-image: url(./img/hero03_bg_SP.jpg);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
   }
 
   /******************************************/

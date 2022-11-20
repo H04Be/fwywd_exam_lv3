@@ -80,6 +80,10 @@
     display: inline;
   }
 
+  .lg_display-block {
+    display: block;
+  }
+
   /******************************************/
   /* 要素の開始位置　                         */
   /******************************************/
@@ -126,10 +130,10 @@
   /******************************************/
   /* 要素の内側の空白（パディング）            */
   /******************************************/
-  /*  要素の左右に空白を設定（60px） */
-  .lg_px-60 {
-    padding-left: 60px;
-    padding-right: 60px;
+  /*  要素の左右に空白を設定（80px） */
+  .lg_px-80 {
+    padding-left: 80px;
+    padding-right: 80px;
   }
 
   /* 要素の左右に空白を設定（30px） */
@@ -371,6 +375,11 @@
     margin-bottom: 10px;
   }
 
+  /* マージン（上下 5px、左右 45px） */
+  .lg_m-v5-h45 {
+    margin: 5px 45px;
+  }
+
   .lg_m-t50 {
     margin-top: 50px;
   }
@@ -438,7 +447,7 @@
   }
 
   .lg_hero-title-line {
-    top: -10px; /* HeroのTitleからの位置指定 */
+    top: -20px; /* HeroのTitleからの位置指定 */
   }
 
   /******************************************/
@@ -508,6 +517,18 @@
     bottom: 0%;
     right: 0%;
     width: 80px;
+  }
+
+  /******************************************/
+  /* Hero02 背景画像　                       */
+  /******************************************/
+  .lg_hero02-bg-img {
+    width: 1024px;
+    height: 293px;
+    background-image: url(./img/hero02_bg_PC.jpg);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
   }
 
   /******************************************/
@@ -655,6 +676,18 @@
   }
 
   /******************************************/
+  /* Hero03 背景画像　                       */
+  /******************************************/
+  .lg_hero03-bg-img {
+    width: 1024px;
+    height: 293px;
+    background-image: url(./img/hero03_bg_PC.jpg);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+
+  /******************************************/
   /* Hero03セクション                        */
   /******************************************/
   .lg_hero03-txt-pos {
@@ -664,6 +697,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 400px;
+    width: 450px;
   }
 }

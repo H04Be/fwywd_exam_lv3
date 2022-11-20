@@ -56,9 +56,9 @@
     margin: 0 50px;
   }
 
-  /* 水平方向のマージン（80px） */
-  .xl_mh-80 {
-    margin: 0 80px;
+  /* 水平方向のマージン（70px） */
+  .xl_mh-70 {
+    margin: 0 70px;
   }
 
   /* 水平方向のマージン（150px） */
@@ -74,6 +74,11 @@
   /* マージン（上下 100px 左右 150px） */
   .xl_m-100-150 {
     margin: 100px 150px;
+  }
+
+  .xl_mv-t20-b50 {
+    margin-top: 20px;
+    margin-bottom: 50px;
   }
 
   /******************************************/
@@ -98,7 +103,7 @@
   }
 
   .xl_hero-title-line {
-    top: -10px; /* HeroのTitleからの位置指定 */
+    top: -20px; /* HeroのTitleからの位置指定 */
   }
 
   /******************************************/
@@ -159,5 +164,30 @@
     /*background: red;
     border: 1px solid #999;
     padding: 10px;*/
+  }
+
+  /******************************************/
+  /* Hero03 背景画像　                       */
+  /******************************************/
+  .xl_hero03-bg-img {
+    width: 1280px;
+    height: 366px;
+    background-image: url(./img/hero03_bg_PC.jpg);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+
+  /******************************************/
+  /* Hero03セクション                        */
+  /******************************************/
+  .xl_hero03-txt-pos {
+    position: absolute; /* 要素の配置方法を指定 */
+    /*background-color: #ccc;*/ /* 背景色指定 */
+    padding: 20px; /* 余白指定 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-65%, -50%);
+    width: 450px;
   }
 }
