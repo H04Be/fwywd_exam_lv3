@@ -35,7 +35,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://h04be.github.io/fwywd_exam_lv3/" />
   </head>
-  <body class="sm_min-w-480">
+  <body class="sm_min-w-480 xl_max-w-1280 xl_m-auto">
     <header class="xl_max-w-1280">
       <nav
         class="flex justify-between px-0 align-center ml-20 lg_px-30 lg_ml-10 xl_ml-10 xl_max-w-1280"
@@ -351,12 +351,17 @@
     <section class="pos-relative xl_max-w-1280"> <!-- Hero02 -->
     <div class="flex">
       <div>
-        <img class="sm_hidden md_hidden lg_display" src="./img/hero02_bg.png" alt="hero02-bg-pic" />
-        <img class="lg_hidden sm_display sm_w-480 md_display md_w-768" src="./img/hero02_bg_sp.png" alt="hero02-bg-pic" />
+        <img class="sm_hidden md_hidden lg_display" src="./img/hero02_bg_PC.jpg" alt="hero02-bg-pic" />
+        <img class="sm_display md_display lg_hidden sm_w-480 md_w-768" src="./img/hero02_bg_SP.jpg" alt="hero02-bg-pic" />
         <div class="sm_hero02-txt-pos md_hero02-txt-pos lg_hero02-txt-pos">
           <img
-            class="pos-absolute sm_w-100 sm_ml-80 sm_top-10 md_w-120 md_ml-190 md_top-10 lg_w-70 lg_ml-70 lg_top-10"
-            src="./img/hero2_logo.png"
+            class="sm_hidden md_hidden lg_display pos-absolute sm_w-100 sm_ml-80 sm_top-10 md_w-120 md_ml-190 md_top-10 lg_w-70 lg_ml-70 lg_top-10"
+            src="./img/hero02_logo_PC.png"
+            alt="hero02-logo"
+          />
+          <img
+            class="sm_display md_display lg_hidden pos-absolute sm_w-100 sm_ml-80 sm_top-10 md_w-120 md_ml-190 md_top-10 lg_w-70 lg_ml-70 lg_top-10"
+            src="./img/hero02_logo_SP.png"
             alt="hero02-logo"
           />
           <div class="text-center text-white font-bold sm_text-20 md_text-28 lg_text-14 text-line-hight">　　　　なら<br>ユーザー主体の<span class="bg-linear">コミュニティ</span>により<br><span class="bg-linear">能動的な学び</span>を保証！</div>
@@ -640,38 +645,53 @@
       <div class="flex">
         <div>
           <!-- 背景画像 -->
-          <img class="sm_hidden md_hidden lg_display" src="./img/hero02_bg.png" alt="hero02-bg-pic" />
-          <img class="lg_hidden sm_display sm_w-480 md_display md_w-768" src="./img/hero02_bg_sp.png" alt="hero02-bg-pic" />
+          <div class="sm_hero03-bg-img md_hero03-bg-img lg_hero03-bg-img xl_hero03-bg-img"></div>
           
-          <div class="sm_hero03-txt-pos md_hero03-txt-pos lg_hero03-txt-pos">
+          <!-- 説明 -->
+          <div class="sm_hero03-txt-pos md_hero03-txt-pos lg_hero03-txt-pos xl_hero03-txt-pos">
             <!-- ロゴ -->
             <div class="sm_m-b60 md_m-b80 lg_m-b40">
+              <!-- PC版-->
               <img
-              class="pos-absolute sm_w-100 sm_h-center md_w-120 md_h-center lg_w-100 lg_h-center"
-              src="./img/hero03_logo.png"
+              class="sm_hidden md_hidden lg_display pos-absolute sm_w-100 sm_h-center md_w-120 md_h-center lg_w-100 lg_h-center"
+              src="./img/hero03_logo_PC.png"
+              alt="hero03-logo"
+              />
+              <!-- SP版 -->
+              <img
+              class="sm_display md_display lg_hidden pos-absolute sm_w-100 sm_h-center md_w-120 md_h-center lg_w-100 lg_h-center"
+              src="./img/hero03_logo_PC.png"
               alt="hero03-logo"
               />
             </div>
             
             <!-- タイトル -->
             <div class="sm_mv-t20-b50 md_mv-t20-b50 lg_mv-t20-b50">
-              <img class="" src="./img/hero03_txt_title_img_white.png" alt="hero03-title" />
-              <div class="flex justify-between sm_mh-20 sm_mv-10 md_mh-80 md_mv-10 lg_mh-20 lg_mv-10">
-                <div class="sm_text-12 md_text-14 lg_text-11 font-bold text-white">仕事を続けながら挑戦可能</div>
-                <div><img class="w-16" src="./img/hero03_icon_hero_x.png" alt="hero03-x-icon" /></div>
-                <div class="sm_text-12 md_text-14 lg_text-11 font-bold text-white">新規事業のすべてが学べる</div>
+              <!-- PC版 -->
+              <img class="sm_hidden md_display lg_display" src="./img/hero03_title_img_white_PC.png" alt="hero03-title" />
+              <!-- SP版 -->
+              <img class="sm_block md_hidden lg_hidden mh-auto" src="./img/hero03_title_img_white_SP.png" alt="hero03-title" />
+              <div class="flex justify-between sm_m-v10-h20 md_m-v10-h70 lg_m-v5-h45">
+                <div class="sm_text-12 md_text-16 lg_text-12 font-bold text-white">仕事を続けながら挑戦可能</div>
+                <!-- PC版 -->
+                <div><img class="sm_hidden md_hidden lg_display w-16" src="./img/hero03_icon_x_PC.png" alt="hero03-x-icon" /></div>
+                <!-- SP版 -->
+                <div><img class="sm_display md_display lg_hidden w-16" src="./img/hero03_icon_x_SP.png" alt="hero03-x-icon" /></div>
+                <div class="sm_text-12 md_text-16 lg_text-12 font-bold text-white">新規事業のすべてが学べる</div>
               </div>
             </div>
             
             <!-- ボタン -->
             <div>
+              <!-- PC版 -->
               <div class="sm_hidden md_hidden lg_display text-white lg_text-11 md_text-16 sm_text-12">
                 <p style="text-align: center">
                   <span style="font-family: arial">&#92;</span>
                   現在１期で２８人が起業に挑戦中 /
                 </p>
               </div>
-              <div class="lg_hidden sm_display md_display text-white lg_text-11 md_text-16 sm_text-12">
+              <!-- SP版 -->
+              <div class="sm_display md_display lg_hidden text-white lg_text-11 md_text-16 sm_text-12">
                 <p style="text-align: center">
                   <span style="font-family: arial">&#92;</span>
                    実際の fwywd ユーザーの声を聞けば絶対に納得 /
@@ -692,14 +712,13 @@
       </div>
     </section>  
 
-
     <section class="pos-relative xl_max-w-1280"> <!-- Page Footer -->
       <div class="bg-black text-white sm_text-12 md_text-16">
         <div class="lg_w-1024 xl_w-1280 lg_flex lg_justify-around sm_p-t20-b10 md_p-t50-b10 lg_p-t50-b10">
           <div class="flex sm_p-l-5-per sm_gap-x-15 md_p-l-40 md_gap-x-15 lg_p-l-40 lg_gap-x-15">
             <!-- fwywdアイコン、ロゴ -->
             <img class="sm_w-35 md_w-55 lg_w-35" src="./img/footer_fwywd_icon.png" alt="fwywdアイコン" />
-            <img class="sm_w-60 md_w-100 lg_w-55" src="./img/hero03_logo.png" alt="fwywdロゴ" />
+            <img class="sm_w-60 md_w-100 lg_w-55" src="./img/hero03_logo_SP.png" alt="fwywdロゴ" />
           </div>
           <div class="text-white sm_p-top-20 sm_p-l-5-per md_p-top-20 md_p-l-40 lg_p-top-0 lg_p-l-0 lg_text-v-center">起業を目指す人のための最高の環境</div>
           <div class="sm_hidden md_hidden lg_display">
