@@ -104,26 +104,52 @@
     <section class="pos-relative xl_max-w-1280"> <!-- Hero -->
       <div class="flex">
         <div>
-          <img src="./img/hero01_bg01.jpg" alt="hero-bg-left-pic" />
+          <!-- 左側背景 -->
+          <!-- PC版 -->
+          <img class="sm_hidden md_display lg_display" src="./img/hero01_bg01_PC.jpg" alt="hero-bg-left-pic" />
+          <!-- SP版 -->
+          <img class="sm_display md_hidden lg_hidden" src="./img/hero01_bg01_SP.jpg" alt="hero-bg-left-pic" />
           <div class="sm_hero-txt-pos md_hero-txt-pos lg_hero-txt-pos xl_hero-txt-pos">
+            <!-- ロゴ -->
+            <!-- PC版 -->
             <img
-              class="sm_w-60 lg_w-100 md_w-60 mh-auto"
-              src="./img/hero01_logo.png"
+              class="sm_hidden md_display-block lg_display-block md_w-60 lg_w-100 mh-auto"
+              src="./img/hero01_logo_PC.png"
               alt="hero-logo"
             />
-            <br /><br />
+            <!-- SP版 -->
             <img
-              src="./img/hero01_txt_title_img_black.png"
+              class="sm_display-block md_hidden lg_hidden mh-auto sm_w-60"
+              src="./img/hero01_logo_SP.png"
+              alt="hero-logo"
+            />
+            <br />
+            <!-- タイトル -->
+            <!-- PC版 -->
+            <img
+              src="./img/hero01_title_img_black_PC.png"
               alt="hero-title"
-              class="pos-top"
+              class="sm_hidden md_display lg_display pos-top"
             />
             <img
-              src="./img/hero01_line.png"
+              src="./img/hero01_line_PC.png"
               alt="hero-title-line"
-              class="pos-bottom  sm_hero-title-line md_hero-title-line lg_hero-title-line xl_hero-title-line"
+              class="sm_hidden md_display lg_display pos-bottom  md_hero-title-line lg_hero-title-line xl_hero-title-line"
             />
+            <!-- SP版 -->
+            <img
+              src="./img/hero01_title_img_black_SP.png"
+              alt="hero-title"
+              class="sm_display md_hidden lg_hidden pos-top"
+            />
+            <img
+              src="./img/hero01_line_SP.png"
+              alt="hero-title-line"
+              class="sm_display md_hidden lg_hidden pos-bottom  sm_hero-title-line"
+            />
+            <!-- 仕事を続けながら挑戦可能 ×　新規事業のすべてが学べる -->
             <div
-              class="flex gap-x-10 align-center justify-between mh-15 sm_gap-x-5 sm_px-20 xl_mh-80 lg_px-60 md_px-20"
+              class="flex gap-x-10 align-center justify-between mh-15 sm_gap-x-5 sm_px-40 xl_mh-70 lg_px-80 md_px-35"
             >
               <div class="text-primary font-bold sm_text-10 lg_text-11">
                 仕事を続けながら挑戦可能
@@ -139,7 +165,8 @@
                 新規事業のすべてが学べる
               </div>
             </div>
-            <br /><br />
+            <br />
+            <!-- ボタン -->
             <div class="sm_hidden">
               <div class="text-primary text-11">
                 <p style="text-align: center">
@@ -159,7 +186,8 @@
           </div>
           </div>
         </div>
-        <div><img class="sm_hidden" src="./img/hero01_bg02.jpg" alt="hero-bg-right-pic" /></div>
+        <!-- 右側背景（PC版）-->
+        <div><img class="sm_hidden" src="./img/hero01_bg02_PC.jpg" alt="hero-bg-right-pic" /></div>
       </div>
 
       <div class="md_hidden py-30">
@@ -180,8 +208,8 @@
         >
     </div>
 
-
-      <div><img class="md_hidden" src="./img/hero01_bg02.jpg" alt="hero-bg-right-pic" /></div>
+　　　<!-- 右側背景（SP版）-->
+      <div class="md_hidden sm_hero01-bg02-SP-img">
     </section>
     <section class="pos-relative xl_max-w-1280"> <!-- Sympathy -->
       <div class="mv-50"> </div>
@@ -670,7 +698,7 @@
               <!-- PC版 -->
               <img class="sm_hidden md_display lg_display" src="./img/hero03_title_img_white_PC.png" alt="hero03-title" />
               <!-- SP版 -->
-              <img class="sm_block md_hidden lg_hidden mh-auto" src="./img/hero03_title_img_white_SP.png" alt="hero03-title" />
+              <img class="sm_display-block md_hidden lg_hidden mh-auto" src="./img/hero03_title_img_white_SP.png" alt="hero03-title" />
               <div class="flex justify-between sm_m-v10-h20 md_m-v10-h70 lg_m-v5-h45">
                 <div class="sm_text-12 md_text-16 lg_text-12 font-bold text-white">仕事を続けながら挑戦可能</div>
                 <!-- PC版 -->
@@ -760,14 +788,14 @@
           </div>
         </div>
         <br>
-        <div class="sm_ml-5-per md_ml-5-per md_block lg_hidden">
+        <div class="sm_ml-5-per md_ml-5-per md_display-block lg_hidden">
           <div>Links</div>
           <br>
           <div>メディアキット</div>
           <div>サイトマップ</div>
         </div>
         <br>
-        <div class="md_block sm_mh-center md_mh-center lg_hidden">
+        <div class="md_display-block sm_mh-center md_mh-center lg_hidden">
           <br>
           <div class="pos-absolute sm_ftr-sns-text md_ftr-sns-text lg_ftr-sns-text"><span style="font-family: arial">&#92;</span> SNS でシェア /</div>
           <div class="flex gap-x-10">

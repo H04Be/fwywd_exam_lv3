@@ -772,16 +772,16 @@ table {
     position: absolute;
   }
 
-  .sm_block {
-    display: block;
-  }
-
   .sm_hidden {
     display: none;
   }
 
   .sm_display {
     display: inline;
+  }
+
+  .sm_display-block {
+    display: block;
   }
 
   /******************************************/
@@ -1030,6 +1030,12 @@ table {
     padding-right: 20px;
   }
 
+  /*  要素に空白を設定 （左右 40px） */
+  .sm_px-40 {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
   /*  要素に空白を設定 （左右 50px） */
   .sm_px-50 {
     padding-left: 50px;
@@ -1059,8 +1065,19 @@ table {
   }
 
   /******************************************/
-  /* Heroセクション                          */
+  /* Hero01セクション                        */
   /******************************************/
+
+  /* Hero01 SP版 右側背景画像 */
+  .sm_hero01-bg02-SP-img {
+    width: 480px;
+    height: 330px;
+    background-image: url(./img/hero01_bg02_SP.jpg);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+
   .sm_hero-txt-pos {
     position: absolute;
     /*background-color: #ccc;*/
