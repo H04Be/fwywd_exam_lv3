@@ -1105,9 +1105,9 @@ table {
     color: #007979;
   }
 
-  /* マージン（上下 5%、 左右 10%）　*/
+  /* マージン（上下 5%、 左右 15%）　*/
   .sm_sympathy-margin {
-    margin: 5% 10%;
+    margin: 5% 15%;
   }
 
   /* ルビの位置調整（ 左から 20%）　*/
@@ -1128,7 +1128,7 @@ table {
     position: absolute;
     top: 70%;
     left: 80%;
-    transform: translate(-60%, 20%);
+    transform: translate(-80%, 35%);
     width: 100px;
     z-index: 3;
   }
