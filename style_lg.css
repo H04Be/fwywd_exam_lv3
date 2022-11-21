@@ -322,6 +322,12 @@
     margin: 20px 0px;
   }
 
+  /* マージン（上下 50px 左右 自動 ）*/
+  .lg_margin-50-auto {
+    margin: 50px auto;
+    transform: translate(0%, 0%);
+  }
+
   /* 水平方向のマージン（上下 0、左右 自動） */
   .lg_mh-auto {
     margin: 0 auto;
