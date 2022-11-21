@@ -932,7 +932,8 @@ table {
 
   /* マージン（上下 20px、左右 自動） */
   .sm_margin-20-auto {
-    margin: 20px auto;
+    margin: 20px 50%;
+    transform: translate(-50%, 0%);
   }
 
   /* マージン（上下 20px 左右 20px ）*/
@@ -1136,17 +1137,17 @@ table {
   /* solution　左側の人 */
   .sm_sol-human01 {
     position: absolute;
-    bottom: 2%;
-    left: 5%;
-    width: 85px;
+    bottom: 0%;
+    left: -5%;
+    width: 100px;
   }
 
   /* solution　右側の人 */
   .sm_sol-human02 {
     position: absolute;
-    bottom: 2%;
-    right: 5%;
-    width: 60px;
+    bottom: 0%;
+    right: -5%;
+    width: 67px;
   }
 
   /* solution　棒グラフ */

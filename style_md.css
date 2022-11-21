@@ -212,9 +212,10 @@
     margin: 0 114px;
   }
 
-  /* マージン（上下 50px 左右 自動 ）*/
+  /* マージン（上下 50px 左右 中央 ）*/
   .md_margin-50-auto {
-    margin: 50px auto;
+    margin: 50px 50%;
+    transform: translate(-50%, 0%);
   }
 
   /* マージン（上下 100px、左右 150px） */
