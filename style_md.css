@@ -407,7 +407,7 @@
     position: absolute;
     top: 70%;
     left: 90%;
-    transform: translate(-60%, -15%);
+    transform: translate(-40%, -15%);
     width: 80px;
     z-index: 3;
   }
