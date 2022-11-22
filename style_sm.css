@@ -543,9 +543,9 @@ table {
   justify-content: center;
 
   /* デバッグ用 */
-  background: red;
+  /*background: red;
   border: 1px solid #999;
-  padding: 10px;
+  padding: 10px;*/
 }
 
 /* 各差別化ポイント用　表示枠（サイズ、マージン） */
