@@ -333,6 +333,11 @@
     margin: 0 auto;
   }
 
+  .lg_mt-130 {
+    position: absolute;
+    margin-top: 120px;
+  }
+
   .lg_mt-150 {
     margin-top: 150px;
   }
