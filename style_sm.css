@@ -580,9 +580,9 @@ table {
   /* 表示開始位置 */
   position: absolute;
   top: 120px;
-  width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
 
   /* 表示方法 */
   display: flex;
@@ -599,7 +599,7 @@ table {
   position: relative;
 
   /* サイズ、色、丸め */
-  width: 350px;
+  width: 400px;
   background: linear-gradient(to right, #2ea1aa, #06bc7a 100%);
   padding: 3px; /*borderの太さ*/
   border-radius: 16px;
