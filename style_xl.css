@@ -168,6 +168,18 @@
   }
 
   /******************************************/
+  /* Hero02 背景画像　                       */
+  /******************************************/
+  .xl_hero02-bg-img {
+    width: 1280px;
+    height: 366px;
+    background-image: url(./img/hero02_bg_PC.jpg);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+
+  /******************************************/
   /* 差別化ポイント関連                      */
   /******************************************/
   /* 差別化ポイント配置用 表示枠（開始位置、表示方法） */
@@ -175,8 +187,8 @@
     /* 表示開始位置 */
     /*position: absolute;
     top: 120px;*/
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
 
     /* 表示方法 */
     /*display: flex;

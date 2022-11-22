@@ -260,6 +260,10 @@
     height: 900px;
   }
 
+  .lg_h-980 {
+    height: 980px;
+  }
+
   .lg_h-1200 {
     height: 1200px;
   }
@@ -543,8 +547,18 @@
   }
 
   /******************************************/
-  /* Hero02セクション                          */
+  /* Hero02セクション                        */
   /******************************************/
+  /* Hero02 背景画像  */
+  .lg_hero02-bg-img {
+    width: 1024px;
+    height: 293px;
+    background-image: url(./img/hero02_bg_PC.jpg);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+
   .lg_hero02-txt-pos {
     position: absolute; /* 要素の配置方法を指定 */
     /*background-color: #ccc;*/ /* 背景色指定 */
@@ -589,8 +603,8 @@
     /* 表示開始位置 */
     /*position: absolute;
     top: 120px;*/
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 0%;
+    margin-right: 0%;
 
     /* 表示方法 */
     /*display: flex;
