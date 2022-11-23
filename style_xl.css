@@ -201,10 +201,24 @@
   /******************************************/
   /* ユーザーの声関連                      */
   /******************************************/
+  .uv-item-box {
+    position: relative;
+
+    /* サイズ、色、丸め */
+    width: 400px;
+    background: linear-gradient(to right, #2ea1aa, #06bc7a 100%);
+    padding: 3px; /*borderの太さ*/
+    border-radius: 16px;
+
+    margin: 50px 20px;
+
+    z-index: 3;
+  }
+
   .border-gradation-radius-wrap {
     /*border-radius: 16px;
     background: #fff;*/ /*背景を白*/
-    padding: 20px;
+    padding: 30px;
   }
 
   /******************************************/
