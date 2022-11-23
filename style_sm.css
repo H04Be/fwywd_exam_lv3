@@ -138,22 +138,32 @@ table {
   color: #bdbdbd;
 }
 
-.text-linear {
+.text-linear-14px {
   font-size: 14px;
   line-height: 130%;
   display: inline-block;
   background: linear-gradient(90deg, #2ea1aa 0%, #06bc7a 100%);
-  background-clip: text; /*背景をテキストでマスクする*/
+  -webkit-background-clip: text; /*背景をテキストでマスクする*/
   -webkit-text-fill-color: transparent;
   position: relative;
 }
 
-.text-linear-10px {
-  font-size: 10px;
+.text-linear-12px {
+  font-size: 12px;
   line-height: 130%;
   display: inline-block;
   background: linear-gradient(90deg, #2ea1aa 0%, #06bc7a 100%);
-  background-clip: text; /*背景をテキストでマスクする*/
+  -webkit-background-clip: text; /*背景をテキストでマスクする*/
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+
+.text-linear-20px {
+  font-size: 20px;
+  line-height: 130%;
+  display: inline-block;
+  background: linear-gradient(90deg, #2ea1aa 0%, #06bc7a 100%);
+  -webkit-background-clip: text; /*背景をテキストでマスクする*/
   -webkit-text-fill-color: transparent;
   position: relative;
 }
@@ -428,10 +438,11 @@ table {
   margin: 50px 50px;
 }
 
-/* 料金 マージン（上 15px 左 35px ）*/
-.mt-15-ml-35 {
+/* 料金 マージン（上 15px 左右 中央 ）*/
+.m_t-15-h-center {
   margin-top: 15px;
-  margin-left: 35px;
+  margin-left: 50%;
+  transform: translate(-50%, 0%);
 }
 
 /******************************************/
@@ -629,9 +640,9 @@ table {
   /* 表示開始位置 */
   position: absolute;
   top: 120px;
-  width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
 
   /* 表示方法 */
   display: flex;
@@ -649,8 +660,8 @@ table {
   position: relative;
 
   /* サイズ、色、丸め */
-  width: 190px;
-  height: 320px;
+  width: 250px;
+  height: 380px;
   background: white;
   border-radius: 16px;
   border: 2px solid #e1e1e1;
@@ -664,8 +675,8 @@ table {
   position: relative;
 
   /* サイズ、色、丸め */
-  width: 190px;
-  height: 320px;
+  width: 250px;
+  height: 380px;
   background: white;
   border-radius: 16px;
   border: 2px solid #f2c94c;
@@ -681,9 +692,9 @@ table {
 .pricing-subtract {
   position: absolute;
 
-  width: 16px;
+  width: 20px;
   top: 0%;
-  left: 150px;
+  left: 200px;
 }
 
 /* プラスアイコン　表示位置 */
@@ -907,13 +918,13 @@ table {
   }
 
   /* UserVoice 背景高さ */
-  .sm_h-1800 {
-    height: 1800px;
+  .sm_h-1700 {
+    height: 1700px;
   }
 
-  /* Pricing 背景高さ */
-  .sm_h-1500 {
-    height: 1500px;
+  /* Pricing 背景高さ   */
+  .sm_h-1600 {
+    height: 1600px;
   }
 
   /******************************************/
@@ -1284,7 +1295,7 @@ table {
   .pricing-plus-pos {
     /*position: absolute;*/
 
-    margin-top: 1300px;
+    margin-top: 1400px;
     /*margin-left: 50%;
     transform: translate(-50%, 0%);*/
   }
@@ -1296,7 +1307,7 @@ table {
     /*width: 80%;
     text-align: center;*/
 
-    margin-top: 1350px;
+    margin-top: 1450px;
     /*margin-left: 50%;
     transform: translate(-50%, 0%);
     border: 2px solid #e1e1e1;
