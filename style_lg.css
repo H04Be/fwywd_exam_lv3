@@ -394,6 +394,10 @@
     margin: 5px 45px;
   }
 
+  .lg_m-t35 {
+    margin-top: 35px;
+  }
+
   .lg_m-t50 {
     margin-top: 50px;
   }
@@ -639,8 +643,12 @@
     padding: 10px;*/
   }
 
-  .uv-item-box {
+  /* ユーザの声 背景枠（最背面）*/
+  .uv-item-box-back-test {
     position: relative;
+
+    top: 0px;
+    left: 0px;
 
     /* サイズ、色、丸め */
     width: 400px;
@@ -649,12 +657,29 @@
     border-radius: 16px;
 
     margin: 50px 20px;
+    z-index: 1;
   }
 
   .border-gradation-radius-wrap {
     border-radius: 16px;
     background: #fff; /*背景を白*/
-    padding: 30px;
+    padding: 20px;
+  }
+
+  /* ユーザの声 user01 背景枠 */
+  .uv-item-box-test {
+    position: absolute;
+
+    top: -55px;
+    left: -30px;
+    /* サイズ、色、丸め */
+    width: 400px;
+    background: linear-gradient(to right, #2ea1aa, #06bc7a 100%);
+    padding: 3px; /*borderの太さ*/
+    border-radius: 16px;
+
+    margin: 50px 20px;
+    z-index: 2;
   }
 
   /******************************************/
