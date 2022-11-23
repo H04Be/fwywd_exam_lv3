@@ -810,12 +810,11 @@ table {
     top: -10px;
   }
 
-  .sm_top-minus-4-percent {
-    top: -4%;
-  }
-
-  .sm_left-40-percent {
-    left: 40%;
+  /* よくある誤解 */
+  .sm_no-pos {
+    top: -5%;
+    left: 50%;
+    transform: translate(-50%, 0%);
   }
 
   .sm_top-10 {
@@ -903,8 +902,8 @@ table {
     height: 440px;
   }
 
-  .sm_h-842 {
-    height: 842px;
+  .sm_h-700 {
+    height: 700px;
   }
 
   /* Solution01 背景高さ */
