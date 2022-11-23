@@ -99,12 +99,11 @@
     top: -10px;
   }
 
-  .lg_top-minus-10-percent {
+  /* よくある誤解 */
+  .lg_no-pos {
     top: -10%;
-  }
-
-  .lg_left-43-percent {
-    left: 43%;
+    left: 50%;
+    transform: translate(-50%, 0%);
   }
 
   .lg_top {
